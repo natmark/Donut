@@ -9,7 +9,12 @@ import Foundation
 
 public struct TemplateDirectory {
     public static let baseURL: URL = {
-        let homeDirectory = FileManager.default.homeDirectoryForCurrentUser
+        let homeDirectory: URL
+        if #available(OSX 10.12, *) {
+            homeDirectory = FileManager.default.homeDirectoryForCurrentUser
+        } else {
+            homeDirectory = URL(fileURLWithPath: NSHomeDirectory())
+        }
 
         let XcodeFileTemplateDirectory = homeDirectory
             .appendingPathComponent("Library")
