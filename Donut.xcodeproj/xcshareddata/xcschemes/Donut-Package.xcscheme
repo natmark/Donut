@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Commandant::Commandant"
-               BuildableName = "Commandant.framework"
-               BlueprintName = "Commandant"
-               ReferencedContainer = "container:Donut.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "Donut::Donut"
                BuildableName = "Donut"
                BlueprintName = "Donut"
@@ -59,6 +45,20 @@
                BlueprintIdentifier = "Result::Result"
                BuildableName = "Result.framework"
                BlueprintName = "Result"
+               ReferencedContainer = "container:Donut.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Commandant::Commandant"
+               BuildableName = "Commandant.framework"
+               BlueprintName = "Commandant"
                ReferencedContainer = "container:Donut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -111,9 +111,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "Commandant::Commandant"
-            BuildableName = "Commandant.framework"
-            BlueprintName = "Commandant"
+            BlueprintIdentifier = "Donut::Donut"
+            BuildableName = "Donut"
+            BlueprintName = "Donut"
             ReferencedContainer = "container:Donut.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
