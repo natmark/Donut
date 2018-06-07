@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import ReactiveTask
 
 public enum DonutError: Error {
     case internalError(description: String)
+    case taskError(TaskError)
 }
