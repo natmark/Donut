@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "Commandant",
+        "repositoryURL": "https://github.com/Carthage/Commandant.git",
+        "state": {
+          "branch": null,
+          "revision": "7f29606ec3a2054a601f0e72f562a104dbc1a11a",
+          "version": "0.13.0"
+        }
+      },
+      {
         "package": "Nimble",
         "repositoryURL": "https://github.com/Quick/Nimble.git",
         "state": {
