@@ -6,25 +6,16 @@ import PackageDescription
 let package = Package(
     name: "Donut",
     products: [
-        .library(
-            name: "Donut",
-            targets: ["Donut"]),
+        .executable(name: "donut", targets: ["Donut"]),
+        .library(name: "DonutKit", targets: ["DonutKit"]),
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/Carthage/ReactiveTask.git", from: "0.14.0"),
         .package(url: "https://github.com/Carthage/Commandant.git", from: "0.13.0"),
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages which this package depends on.
-        .target(
-            name: "Donut",
-            dependencies: ["ReactiveTask", "Commandant"],
-            path: "Sources"),
-        .testTarget(
-            name: "DonutTests",
-            dependencies: [],
-            path: "Tests"),
+        .target(name: "Donut", dependencies: ["ReactiveTask", "Commandant", "DonutKit"]),
+        .target(name: "DonutKit", dependencies: []),
+        .testTarget(name: "DonutTests", dependencies: ["Donut"], path: "Tests"),
     ]
 )

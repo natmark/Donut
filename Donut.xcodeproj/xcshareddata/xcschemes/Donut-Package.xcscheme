@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ReactiveSwift::ReactiveSwift"
-               BuildableName = "ReactiveSwift.framework"
-               BlueprintName = "ReactiveSwift"
+               BlueprintIdentifier = "Donut::DonutKit"
+               BuildableName = "DonutKit.framework"
+               BlueprintName = "DonutKit"
                ReferencedContainer = "container:Donut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,9 +42,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Commandant::Commandant"
-               BuildableName = "Commandant.framework"
-               BlueprintName = "Commandant"
+               BlueprintIdentifier = "Donut::Donut"
+               BuildableName = "Donut"
+               BlueprintName = "Donut"
                ReferencedContainer = "container:Donut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -70,9 +70,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Donut::Donut"
-               BuildableName = "Donut"
-               BlueprintName = "Donut"
+               BlueprintIdentifier = "Commandant::Commandant"
+               BuildableName = "Commandant.framework"
+               BlueprintName = "Commandant"
+               ReferencedContainer = "container:Donut.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ReactiveSwift::ReactiveSwift"
+               BuildableName = "ReactiveSwift.framework"
+               BlueprintName = "ReactiveSwift"
                ReferencedContainer = "container:Donut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

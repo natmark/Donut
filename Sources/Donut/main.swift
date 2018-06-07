@@ -1,5 +1,6 @@
 import Foundation
 import Commandant
+import DonutKit
 
 let registry = CommandRegistry<DonutError>()
 registry.register(VersionCommand())
