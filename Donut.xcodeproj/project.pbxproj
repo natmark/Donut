@@ -339,10 +339,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_12 /* Donut */ = {
+		E79CCDC820C925F1008C4481 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_13 /* VersionCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		OBJ_12 /* Donut */ = {
+			isa = PBXGroup;
+			children = (
+				E79CCDC820C925F1008C4481 /* Commands */,
 				OBJ_14 /* main.swift */,
 			);
 			name = Donut;
@@ -436,7 +444,7 @@
 			path = ".build/checkouts/ReactiveSwift.git-5417491714505190452/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -445,7 +453,6 @@
 				OBJ_17 /* Dependencies */,
 				OBJ_63 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_58 /* Result 3.2.4 */ = {
@@ -716,7 +723,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
