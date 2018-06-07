@@ -4,6 +4,7 @@ import DonutKit
 
 let registry = CommandRegistry<DonutError>()
 registry.register(VersionCommand())
+registry.register(ListCommand())
 
 let helpCommand = HelpCommand(registry: registry)
 registry.register(helpCommand)

@@ -32,6 +32,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		E79CCDCB20C927D7008C4481 /* ListCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79CCDC920C927A8008C4481 /* ListCommand.swift */; };
+		E79CCDCE20C933C8008C4481 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79CCDCC20C93024008C4481 /* Template.swift */; };
 		OBJ_100 /* VersionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* VersionCommand.swift */; };
 		OBJ_101 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* main.swift */; };
 		OBJ_103 /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Commandant::Commandant::Product" /* Commandant.framework */; };
@@ -221,6 +223,8 @@
 		"Donut::Donut::Product" /* Donut */ = {isa = PBXFileReference; lastKnownFileType = text; path = Donut; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Donut::DonutKit::Product" /* DonutKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DonutKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Donut::DonutTests::Product" /* DonutTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DonutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E79CCDC920C927A8008C4481 /* ListCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCommand.swift; sourceTree = "<group>"; };
+		E79CCDCC20C93024008C4481 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
 		OBJ_10 /* SemanticVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanticVersion.swift; sourceTree = "<group>"; };
 		OBJ_11 /* TemplateDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateDirectory.swift; sourceTree = "<group>"; };
 		OBJ_13 /* VersionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionCommand.swift; sourceTree = "<group>"; };
@@ -343,6 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_13 /* VersionCommand.swift */,
+				E79CCDC920C927A8008C4481 /* ListCommand.swift */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -503,6 +508,7 @@
 				OBJ_9 /* DonutErrors.swift */,
 				OBJ_10 /* SemanticVersion.swift */,
 				OBJ_11 /* TemplateDirectory.swift */,
+				E79CCDCC20C93024008C4481 /* Template.swift */,
 			);
 			name = DonutKit;
 			path = Sources/DonutKit;
@@ -752,6 +758,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_120 /* DonutErrors.swift in Sources */,
+				E79CCDCE20C933C8008C4481 /* Template.swift in Sources */,
 				OBJ_121 /* SemanticVersion.swift in Sources */,
 				OBJ_122 /* TemplateDirectory.swift in Sources */,
 			);
@@ -874,6 +881,7 @@
 			files = (
 				OBJ_100 /* VersionCommand.swift in Sources */,
 				OBJ_101 /* main.swift in Sources */,
+				E79CCDCB20C927D7008C4481 /* ListCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

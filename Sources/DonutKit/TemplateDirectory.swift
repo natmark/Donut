@@ -8,6 +8,7 @@
 import Foundation
 
 public struct TemplateDirectory {
+    public static let templatePathExtension = "xctemplate"
     public static var homeDirectory: URL = {
         let homeDirectory: URL
         if #available(OSX 10.12, *) {
@@ -29,17 +30,52 @@ public struct TemplateDirectory {
         return XcodeFileTemplateDirectory
     }()
 
-    public static let hosts: [URL] = {
-        let directoryContents = try? FileManager.default.contentsOfDirectory(
-            at: TemplateDirectory.baseURL,
-            includingPropertiesForKeys: nil,
-            options: FileManager.DirectoryEnumerationOptions.skipsHiddenFiles
-        )
+    public static let hostURLs: [URL] = {
+        return TemplateDirectory.directoryContents(url: TemplateDirectory.baseURL)
+    }()
 
-        guard let contents = directoryContents else {
-            return []
+    public static let userURLs: [URL] = {
+        var users = [URL]()
+        for host in TemplateDirectory.hostURLs {
+            users += TemplateDirectory.directoryContents(url: host)
         }
 
-        return contents
+        return users
     }()
+
+    public static let repositoryURLs: [URL] = {
+        var repos = [URL]()
+        for user in TemplateDirectory.userURLs {
+            repos += TemplateDirectory.directoryContents(url: user)
+        }
+
+        return repos
+    }()
+
+    public static let templateURLs: [URL] = {
+        var templates = [URL]()
+        for repository in TemplateDirectory.repositoryURLs {
+            templates += TemplateDirectory.directoryContents(url: repository).filter {
+                $0.pathExtension == TemplateDirectory.templatePathExtension
+            }
+        }
+
+        return templates
+    }()
+
+    public static let templates: [Template] = {
+        return TemplateDirectory.templateURLs.map { Template(path: $0) }
+    }()
+
+    private static func directoryContents(url: URL) -> [URL] {
+        guard let directoryContents = try? FileManager.default.contentsOfDirectory(
+            at: url,
+            includingPropertiesForKeys: nil,
+            options: FileManager.DirectoryEnumerationOptions.skipsHiddenFiles
+            )
+        else {
+            return []
+        }
+        return directoryContents
+    }
 }
