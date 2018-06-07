@@ -9,8 +9,8 @@ import XCTest
 @testable import DonutKit
 
 class TemplateDirectoryTests: XCTestCase {
-    func testExample() {
+    func testBaseURL() {
         TemplateDirectory.homeDirectory = URL(fileURLWithPath: "/Users/Donut")
-        XCTAssertEqual(TemplateDirectory.baseURL, URL(fileURLWithPath: "/Users/Donut/Library/Developers/Xcode/Template/Template Files"))
+        XCTAssertEqual(TemplateDirectory.baseURL, URL(fileURLWithPath: "/Users/Donut/Library/Developer/Xcode/Templates/File Templates"))
     }
 }
