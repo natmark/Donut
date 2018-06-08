@@ -21,7 +21,7 @@ public struct TemplateList {
 
 public struct ListCommand: CommandProtocol {
     public let verb = "list"
-    public let function = "Display the list of installed xcode file templates"
+    public let function = "Display the list of installed Xcode file templates"
     public func run(_ options: NoOptions<DonutError>) -> Result<(), DonutError> {
         TemplateList.show()
         return .success(())
