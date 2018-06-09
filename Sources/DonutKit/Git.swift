@@ -11,27 +11,104 @@ import ReactiveTask
 import ReactiveSwift
 import Result
 
+public struct Commit {
+    public let id: String
+    public let version: String
+    init(id: String, version: String) {
+        self.id = id
+        self.version = version
+    }
+}
+
 public struct Git {
     public static let donutRequiredGitVersion = "2.3.0"
 
-    public static func checkExistenceOfRemoteRepoWithVesrion(_ url: URL, version: String) -> SignalProducer<Void, DonutError> {
-        return launchGitTask(["ls-remote", "-t", url.absoluteString]).flatMap(.latest) { input -> SignalProducer<Void, DonutError> in
-            let tags = input.components(separatedBy: "\n").dropLast().map { $0.components(separatedBy: "\t") }.map { (commit: $0[0], version: $0[1].replacingOccurrences(of: "refs/tags/", with: "")) }
+    public static func installTemplateFrom(url: URL, version: String) -> SignalProducer<String, DonutError> {
 
+        let makeDirectory = Task("/usr/bin/env", arguments: ["mkdir", "-p","\(url.host!)/\(url.path)"], workingDirectoryPath: TemplateDirectory.baseURL.path, environment: nil)
+
+        let dirPath = TemplateDirectory.baseURL.path + "/\(url.host!)/\(url.path)"
+        let gitInit = Task("/usr/bin/env", arguments: ["git", "init"], workingDirectoryPath: dirPath, environment: nil)
+
+        let gitRemoteAdd = Task("/usr/bin/env", arguments: ["git", "remote", "add", "origin", url.absoluteString], workingDirectoryPath: dirPath, environment: nil)
+
+        guard let result = checkExistenceOfRemoteRepoWith(url: url, version: version).first() else {
+            return SignalProducer(error: DonutError.internalError(description: "Cannot access to Git remote repository"))
+        }
+        let commit: Commit
+        switch result {
+        case .success(let result):
+            commit = result
+        case .failure(let error):
+            return SignalProducer(error: error)
+        }
+
+        let gitFetch = Task("/usr/bin/env", arguments: ["git", "fetch", "origin", commit.id], workingDirectoryPath: dirPath, environment: nil)
+
+        let gitCheckout = Task("/usr/bin/env", arguments: ["git", "checkout", commit.id, "--", "README.md"], workingDirectoryPath: dirPath, environment: nil)
+
+        let gitCheckoutBranch = Task("/usr/bin/env", arguments: ["git", "checkout", "-b", commit.version], workingDirectoryPath: dirPath, environment: nil)
+
+        let gitCommit = Task("/usr/bin/env", arguments: ["git", "commit", "-a", "-m", "\"set tag\""], workingDirectoryPath: dirPath, environment: nil)
+
+        return makeDirectory.launch()
+            .ignoreTaskData()
+            .map { _ in
+                gitInit.launch()
+                    .ignoreTaskData()
+                    .first()
+            }
+            .map { _ in
+                gitRemoteAdd.launch()
+                    .ignoreTaskData()
+                    .first()
+            }
+            .map { _ in
+                return gitFetch.launch()
+                    .ignoreTaskData()
+                    .first()
+            }
+            .map { _ in
+                return gitCheckout.launch()
+                    .ignoreTaskData()
+                    .first()
+            }
+            .map { _ in
+                return gitCheckoutBranch.launch()
+                    .ignoreTaskData()
+                    .first()
+            }
+            .map { _ in
+                return gitCommit.launch()
+                    .ignoreTaskData()
+                    .mapError(DonutError.taskError)
+                    .map { data in
+                        return String(data: data, encoding: .utf8)!
+                    }
+                    .first()
+            }
+            .mapError(DonutError.taskError)
+            .map { data in
+                return data!.value!
+            }
+    }
+
+    public static func checkExistenceOfRemoteRepoWith(url: URL, version: String) -> SignalProducer<Commit, DonutError> {
+        return launchGitTask(["ls-remote", "-t", url.absoluteString]).flatMap(.latest) { input -> SignalProducer<Commit, DonutError> in
+            let tags = input.components(separatedBy: "\n").dropLast().map { $0.components(separatedBy: "\t") }.map { Commit(id: $0[0], version: $0[1].replacingOccurrences(of: "refs/tags/", with: "")) }
             if version == "latest" && tags.count > 0 {
-                return SignalProducer(value: ())
+                return SignalProducer(value: tags.last!)
             }
 
             for tag in tags {
                 if tag.version == version {
-                    return SignalProducer(value: ())
+                    return SignalProducer(value: tag)
                 }
             }
             return SignalProducer(error: DonutError.tagNotFoundError)
         }.mapError { error -> DonutError in
             return DonutError.repositoryNotFoundError
         }
-
     }
 
     public static func installTemplateFrom(_ url: URL, version: String) -> SignalProducer<Bool, DonutError> {

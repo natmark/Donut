@@ -20,8 +20,11 @@ public struct InstallCommand: CommandProtocol {
         guard let url = URL(string: options.urlString) else {
             return .failure(DonutError.urlDecodeError)
         }
+        let version = options.version
 
-        guard let result = Git.checkExistenceOfRemoteRepoWithVesrion(url, version: options.version).first() else {
+        Git.installTemplateFrom(url: url, version: version).first()
+
+        guard let result = Git.checkExistenceOfRemoteRepoWith(url: url, version: version).first() else {
             return .failure(DonutError.internalError(description: "Cannot access to Git remote repository"))
         }
 
