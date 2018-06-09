@@ -14,34 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Result::Result"
-               BuildableName = "Result.framework"
-               BlueprintName = "Result"
-               ReferencedContainer = "container:Donut.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Donut::DonutKit"
-               BuildableName = "DonutKit.framework"
-               BlueprintName = "DonutKit"
-               ReferencedContainer = "container:Donut.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "Donut::Donut"
                BuildableName = "Donut"
                BlueprintName = "Donut"
@@ -56,9 +28,51 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Result::Result"
+               BuildableName = "Result.framework"
+               BlueprintName = "Result"
+               ReferencedContainer = "container:Donut.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Curry::Curry"
+               BuildableName = "Curry.framework"
+               BlueprintName = "Curry"
+               ReferencedContainer = "container:Donut.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "ReactiveTask::ReactiveTask"
                BuildableName = "ReactiveTask.framework"
                BlueprintName = "ReactiveTask"
+               ReferencedContainer = "container:Donut.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Donut::DonutKit"
+               BuildableName = "DonutKit.framework"
+               BlueprintName = "DonutKit"
                ReferencedContainer = "container:Donut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -125,9 +139,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "Result::Result"
-            BuildableName = "Result.framework"
-            BlueprintName = "Result"
+            BlueprintIdentifier = "Donut::Donut"
+            BuildableName = "Donut"
+            BlueprintName = "Donut"
             ReferencedContainer = "container:Donut.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

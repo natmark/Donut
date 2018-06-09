@@ -11,4 +11,7 @@ import ReactiveTask
 public enum DonutError: Error {
     case internalError(description: String)
     case taskError(TaskError)
+    case urlDecodeError
+    case repositoryNotFoundError
+    case tagNotFoundError
 }

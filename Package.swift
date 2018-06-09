@@ -12,9 +12,10 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/Carthage/ReactiveTask.git", from: "0.14.0"),
         .package(url: "https://github.com/Carthage/Commandant.git", from: "0.13.0"),
+        .package(url: "https://github.com/thoughtbot/Curry.git", from: "4.0.1"),
     ],
     targets: [
-        .target(name: "Donut", dependencies: ["ReactiveTask", "Commandant", "DonutKit"]),
+        .target(name: "Donut", dependencies: ["ReactiveTask", "Commandant", "Curry", "DonutKit"]),
         .target(name: "DonutKit", dependencies: []),
         .testTarget(name: "DonutTests", dependencies: ["Donut"], path: "Tests"),
     ]

@@ -2,14 +2,15 @@ import Foundation
 import Commandant
 import DonutKit
 
-guard ensureGitVersion().first()?.value == true else {
-    fputs("Donut requires git \(donutRequiredGitVersion) or later.\n", stderr)
+guard Git.ensureGitVersion().first()?.value == true else {
+    fputs("Donut requires git \(Git.donutRequiredGitVersion) or later.\n", stderr)
     exit(EXIT_FAILURE)
 }
 
 let registry = CommandRegistry<DonutError>()
 registry.register(VersionCommand())
 registry.register(ListCommand())
+registry.register(InstallCommand())
 
 let helpCommand = HelpCommand(registry: registry)
 registry.register(helpCommand)
