@@ -38,6 +38,7 @@ public struct Git {
         let commit: Commit
         switch result {
         case .success(let result):
+            print("*Found \(url.absoluteString) (\(version))")
             commit = result
         case .failure(let error):
             return SignalProducer(error: error)
@@ -53,43 +54,45 @@ public struct Git {
 
         return makeDirectory.launch()
             .ignoreTaskData()
-            .map { _ in
-                gitInit.launch()
+            .map { _ -> Result<Data, TaskError>? in
+                return gitInit.launch()
                     .ignoreTaskData()
                     .first()
             }
-            .map { _ in
-                gitRemoteAdd.launch()
+            .map { _ -> Result<Data, TaskError>? in
+                return gitRemoteAdd.launch()
                     .ignoreTaskData()
                     .first()
             }
-            .map { _ in
+            .map { _ -> Result<Data, TaskError>? in
                 return gitFetch.launch()
                     .ignoreTaskData()
                     .first()
             }
-            .map { _ in
+            .map { _ -> Result<Data, TaskError>? in
+                Swift.print("*Checkout from \(url.absoluteString)")
                 return gitCheckout.launch()
                     .ignoreTaskData()
                     .first()
             }
-            .map { _ in
+            .map { _ -> Result<Data, TaskError>? in
                 return gitCheckoutBranch.launch()
                     .ignoreTaskData()
                     .first()
             }
-            .map { _ in
+            .map { _ -> Result<Data, TaskError>? in
                 return gitCommit.launch()
                     .ignoreTaskData()
-                    .mapError(DonutError.taskError)
-                    .map { data in
-                        return String(data: data, encoding: .utf8)!
-                    }
                     .first()
             }
             .mapError(DonutError.taskError)
-            .map { data in
-                return data!.value!
+            .map { data -> String in
+                switch data {
+                case .success(let data)?:
+                    return String(data: data, encoding: .utf8)!
+                default: break
+                }
+                return ""
             }
     }
 
