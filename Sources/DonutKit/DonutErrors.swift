@@ -14,4 +14,7 @@ public enum DonutError: Error {
     case urlDecodeError
     case repositoryNotFoundError
     case tagNotFoundError
+    case directoryCreateError
+    case gitError
+    case templateFileNotFoundError
 }

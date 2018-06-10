@@ -17,36 +17,28 @@ public struct Template {
 
 extension Template {
     public var name: String {
-        get {
-            return self.path
-                .lastPathComponent // template
-        }
+        return self.path
+            .lastPathComponent // template
     }
 
     public var repository: String {
-        get {
-            return self.path
-                .deletingLastPathComponent() // template
-                .lastPathComponent // repository
-        }
+        return self.path
+            .deletingLastPathComponent() // template
+            .lastPathComponent // repository
     }
 
     public var user: String {
-        get {
-            return self.path
-                .deletingLastPathComponent() // template
-                .deletingLastPathComponent() // repository
-                .lastPathComponent // user
-        }
+        return self.path
+            .deletingLastPathComponent() // template
+            .deletingLastPathComponent() // repository
+            .lastPathComponent // user
     }
 
     public var host: String {
-        get {
-            return self.path
-                .deletingLastPathComponent() // template
-                .deletingLastPathComponent() // repository
-                .deletingLastPathComponent() // user
-                .lastPathComponent // host
-        }
+        return self.path
+            .deletingLastPathComponent() // template
+            .deletingLastPathComponent() // repository
+            .deletingLastPathComponent() // user
+            .lastPathComponent // host
     }
 }

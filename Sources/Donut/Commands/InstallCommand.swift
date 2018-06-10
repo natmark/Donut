@@ -22,16 +22,14 @@ public struct InstallCommand: CommandProtocol {
         }
         let version = options.version
 
-        Git.installTemplateFrom(url: url, version: version).first()
-
-        guard let result = Git.checkExistenceOfRemoteRepoWith(url: url, version: version).first() else {
+        guard let result = Git.installTemplateFrom(url: url, version: version).first() else {
             return .failure(DonutError.internalError(description: "Cannot access to Git remote repository"))
         }
 
         switch result {
-        case .success(_): break
+        case .success: break
         case .failure(let error):
-            print(error)
+            Swift.print("[ERROR]:", error)
             return .failure(error)
         }
 

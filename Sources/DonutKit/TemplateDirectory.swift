@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import ReactiveTask
+import ReactiveSwift
+import Result
 
 public struct TemplateDirectory {
     public static let templatePathExtension = "xctemplate"
@@ -66,6 +69,26 @@ public struct TemplateDirectory {
     public static let templates: [Template] = {
         return TemplateDirectory.templateURLs.map { Template(path: $0) }
     }()
+
+    public static func removeDirectory(url: URL) -> SignalProducer<String, DonutError> {
+        let taskDescription = Task("/usr/bin/env", arguments: ["rm", "-rf", "\(url.host!)/\(url.path)"], workingDirectoryPath: TemplateDirectory.baseURL.path, environment: nil)
+        return taskDescription.launch()
+            .ignoreTaskData()
+            .mapError(DonutError.taskError)
+            .map { data in
+                return String(data: data, encoding: .utf8)!
+        }
+    }
+
+    public static func makeDirectory(url: URL) -> SignalProducer<String, DonutError> {
+        let taskDescription = Task("/usr/bin/env", arguments: ["mkdir", "-p", "\(url.host!)/\(url.path)"], workingDirectoryPath: TemplateDirectory.baseURL.path, environment: nil)
+        return taskDescription.launch()
+            .ignoreTaskData()
+            .mapError(DonutError.taskError)
+            .map { data in
+                return String(data: data, encoding: .utf8)!
+        }
+    }
 
     private static func directoryContents(url: URL) -> [URL] {
         guard let directoryContents = try? FileManager.default.contentsOfDirectory(

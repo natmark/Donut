@@ -103,133 +103,133 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E7C0419120CA56F6001C949C /* PBXContainerItemProxy */ = {
+		E74AE18920CD075E0080F843 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Result::Result";
+			remoteInfo = Result;
+		};
+		E74AE18A20CD075E0080F843 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Result::Result";
+			remoteInfo = Result;
+		};
+		E74AE18B20CD075E0080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Curry::Curry";
 			remoteInfo = Curry;
 		};
-		E7C0419220CA56F6001C949C /* PBXContainerItemProxy */ = {
+		E74AE18C20CD075E0080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Commandant::Commandant";
 			remoteInfo = Commandant;
 		};
-		E7C0419320CA56F6001C949C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Result::Result";
-			remoteInfo = Result;
-		};
-		E7C0419420CA56F6001C949C /* PBXContainerItemProxy */ = {
+		E74AE18D20CD075E0080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "ReactiveTask::ReactiveTask";
 			remoteInfo = ReactiveTask;
 		};
-		E7C0419520CA56F6001C949C /* PBXContainerItemProxy */ = {
+		E74AE18E20CD075E0080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "ReactiveSwift::ReactiveSwift";
 			remoteInfo = ReactiveSwift;
 		};
-		E7C0419620CA56F6001C949C /* PBXContainerItemProxy */ = {
+		E74AE18F20CD075E0080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Result::Result";
 			remoteInfo = Result;
 		};
-		E7C0419720CA56F6001C949C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Result::Result";
-			remoteInfo = Result;
-		};
-		E7C0419820CA56F6001C949C /* PBXContainerItemProxy */ = {
+		E74AE19020CD075E0080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "ReactiveSwift::ReactiveSwift";
 			remoteInfo = ReactiveSwift;
 		};
-		E7C0419920CA56F6001C949C /* PBXContainerItemProxy */ = {
+		E74AE19120CD075E0080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Result::Result";
 			remoteInfo = Result;
 		};
-		E7C0419A20CA56F6001C949C /* PBXContainerItemProxy */ = {
+		E74AE19220CD075E0080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Donut::DonutKit";
 			remoteInfo = DonutKit;
 		};
-		E7C0419B20CA56F6001C949C /* PBXContainerItemProxy */ = {
+		E74AE19320CD075E0080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Donut::Donut";
 			remoteInfo = Donut;
 		};
-		E7C0419C20CA56F6001C949C /* PBXContainerItemProxy */ = {
+		E74AE19420CD075E0080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Curry::Curry";
 			remoteInfo = Curry;
 		};
-		E7C0419D20CA56F6001C949C /* PBXContainerItemProxy */ = {
+		E74AE19520CD075E0080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Commandant::Commandant";
 			remoteInfo = Commandant;
 		};
-		E7C0419E20CA56F6001C949C /* PBXContainerItemProxy */ = {
+		E74AE19620CD075E0080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "ReactiveTask::ReactiveTask";
 			remoteInfo = ReactiveTask;
 		};
-		E7C0419F20CA56F6001C949C /* PBXContainerItemProxy */ = {
+		E74AE19720CD075E0080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "ReactiveSwift::ReactiveSwift";
 			remoteInfo = ReactiveSwift;
 		};
-		E7C041A020CA56F6001C949C /* PBXContainerItemProxy */ = {
+		E74AE19820CD075E0080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Result::Result";
 			remoteInfo = Result;
 		};
-		E7C041A120CA56F6001C949C /* PBXContainerItemProxy */ = {
+		E74AE19920CD075E0080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Donut::DonutKit";
 			remoteInfo = DonutKit;
 		};
-		E7C041A220CA56FA001C949C /* PBXContainerItemProxy */ = {
+		E74AE19A20CD07630080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Donut::DonutTests";
 			remoteInfo = DonutTests;
 		};
-		E7C041A320CA56FA001C949C /* PBXContainerItemProxy */ = {
+		E74AE19B20CD07630080F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -538,14 +538,14 @@
 		OBJ_71 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"Donut::Donut::Product" /* Donut */,
-				"Result::Result::Product" /* Result.framework */,
-				"Curry::Curry::Product" /* Curry.framework */,
-				"ReactiveTask::ReactiveTask::Product" /* ReactiveTask.framework */,
-				"Donut::DonutKit::Product" /* DonutKit.framework */,
-				"Commandant::Commandant::Product" /* Commandant.framework */,
-				"Donut::DonutTests::Product" /* DonutTests.xctest */,
 				"ReactiveSwift::ReactiveSwift::Product" /* ReactiveSwift.framework */,
+				"Result::Result::Product" /* Result.framework */,
+				"Commandant::Commandant::Product" /* Commandant.framework */,
+				"Donut::DonutKit::Product" /* DonutKit.framework */,
+				"Curry::Curry::Product" /* Curry.framework */,
+				"Donut::DonutTests::Product" /* DonutTests.xctest */,
+				"Donut::Donut::Product" /* Donut */,
+				"ReactiveTask::ReactiveTask::Product" /* ReactiveTask.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -992,97 +992,97 @@
 		OBJ_133 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Curry::Curry" /* Curry */;
-			targetProxy = E7C0419120CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE18B20CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_134 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Commandant::Commandant" /* Commandant */;
-			targetProxy = E7C0419220CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE18C20CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_135 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "ReactiveTask::ReactiveTask" /* ReactiveTask */;
-			targetProxy = E7C0419420CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE18D20CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_137 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "ReactiveSwift::ReactiveSwift" /* ReactiveSwift */;
-			targetProxy = E7C0419820CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE19020CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_139 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Result::Result" /* Result */;
-			targetProxy = E7C0419920CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE19120CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_140 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Donut::DonutKit" /* DonutKit */;
-			targetProxy = E7C0419A20CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE19220CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_162 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Donut::DonutTests" /* DonutTests */;
-			targetProxy = E7C041A220CA56FA001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE19A20CD07630080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_176 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Donut::Donut" /* Donut */;
-			targetProxy = E7C0419B20CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE19320CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_177 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Curry::Curry" /* Curry */;
-			targetProxy = E7C0419C20CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE19420CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_178 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Commandant::Commandant" /* Commandant */;
-			targetProxy = E7C0419D20CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE19520CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_179 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "ReactiveTask::ReactiveTask" /* ReactiveTask */;
-			targetProxy = E7C0419E20CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE19620CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_180 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "ReactiveSwift::ReactiveSwift" /* ReactiveSwift */;
-			targetProxy = E7C0419F20CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE19720CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_181 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Result::Result" /* Result */;
-			targetProxy = E7C041A020CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE19820CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_182 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Donut::DonutKit" /* DonutKit */;
-			targetProxy = E7C041A120CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE19920CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_210 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Result::Result" /* Result */;
-			targetProxy = E7C0419620CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE18920CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_227 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "ReactiveSwift::ReactiveSwift" /* ReactiveSwift */;
-			targetProxy = E7C0419520CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE18E20CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_228 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Result::Result" /* Result */;
-			targetProxy = E7C0419720CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE18F20CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_252 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Donut::Donut" /* Donut */;
-			targetProxy = E7C041A320CA56FA001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE19B20CD07630080F843 /* PBXContainerItemProxy */;
 		};
 		OBJ_96 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Result::Result" /* Result */;
-			targetProxy = E7C0419320CA56F6001C949C /* PBXContainerItemProxy */;
+			targetProxy = E74AE18A20CD075E0080F843 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
