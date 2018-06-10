@@ -16,7 +16,7 @@ let package = Package(
     ],
     targets: [
         .target(name: "Donut", dependencies: ["ReactiveTask", "Commandant", "Curry", "DonutKit"]),
-        .target(name: "DonutKit", dependencies: []),
+        .target(name: "DonutKit", dependencies: ["ReactiveTask"]),
         .testTarget(name: "DonutTests", dependencies: ["Donut"], path: "Tests"),
     ]
 )
