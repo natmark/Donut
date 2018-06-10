@@ -25,9 +25,15 @@ public struct Git {
 
     public static func installTemplateFrom(url: URL, version: String) -> SignalProducer<Void, DonutError> {
         let dirPath = URL(fileURLWithPath: TemplateDirectory.baseURL.path + "/\(url.host!)\(url.path)")
-        guard let commit = checkExistenceOfRemoteRepoWith(url: url, version: version).first()?.value else {
+
+        guard let result = checkExistenceOfRemoteRepoWith(url: url, version: version).first() else {
             return SignalProducer(error: DonutError.internalError(description: "Cannot access to Git remote repository"))
         }
+
+        guard let commit = result.value else {
+            return SignalProducer(error: result.error ?? DonutError.internalError(description: "Cannot access to Git remote repository"))
+        }
+
         print("*Found \(url.absoluteString) (\(version))")
 
         return TemplateDirectory.removeDirectory(url: url)
@@ -81,6 +87,9 @@ public struct Git {
 
     public static func checkExistenceOfRemoteRepoWith(url: URL, version: String) -> SignalProducer<Commit, DonutError> {
         return launchGitTask(["ls-remote", "-t", url.absoluteString])
+            .mapError { _ -> DonutError in
+                return DonutError.repositoryNotFoundError
+            }
             .flatMap(.latest) { input -> SignalProducer<Commit, DonutError> in
                 let tags = input.components(separatedBy: "\n").dropLast().map { $0.components(separatedBy: "\t") }.map { Commit(id: $0[0], version: $0[1].replacingOccurrences(of: "refs/tags/", with: "")) }
                 if version == "latest" && tags.count > 0 {
@@ -93,8 +102,8 @@ public struct Git {
 
                 return SignalProducer(error: DonutError.tagNotFoundError)
             }
-            .mapError { _ -> DonutError in
-                return DonutError.repositoryNotFoundError
+            .mapError { error -> DonutError in
+                return error
             }
     }
 
