@@ -6,5 +6,6 @@ branches:
 before_script:
     - swift build
 script:
+    - swiftlint
     - swift test
 
