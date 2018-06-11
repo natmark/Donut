@@ -24,7 +24,7 @@ public struct Git {
     public static let donutRequiredGitVersion = "2.3.0"
 
     public static func installTemplateFrom(url: URL, version: String) -> SignalProducer<Void, DonutError> {
-        let dirPath = URL(fileURLWithPath: TemplateDirectory.baseURL.path + "/\(url.host!)\(url.path)")
+        let dirPath = URL(fileURLWithPath: TemplateDirectory.basePath.path + "/\(url.host!)\(url.path)")
 
         guard let result = checkExistenceOfRemoteRepoWith(url: url, version: version).first() else {
             return SignalProducer(error: DonutError.internalError(description: "Cannot access to Git remote repository"))
@@ -34,7 +34,7 @@ public struct Git {
             return SignalProducer(error: result.error ?? DonutError.internalError(description: "Cannot access to Git remote repository"))
         }
 
-        Swift.print("*Found \(url.absoluteString) (\(version))")
+        Swift.print("Found \(url.absoluteString) (\(version))")
 
         return TemplateDirectory.removeDirectory(url: url)
             .attemptMap { _ in
@@ -70,7 +70,7 @@ public struct Git {
                     .first()!
             }
             .map { _ in
-                Swift.print("*Checkout from \(url.absoluteString)")
+                Swift.print("Checkout from \(url.absoluteString)")
             }
             .attemptMap { _ in
                 launchGitTask(["checkout", "-b", commit.version], repositoryFileURL: dirPath, standardInput: nil, environment: nil)
@@ -81,7 +81,7 @@ public struct Git {
                     .first()!
             }
             .map { _ in
-                Swift.print("Template completely installed")
+                Swift.print("Successfully installed \(url.absoluteString) (\(version))")
             }
     }
 

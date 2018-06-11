@@ -22,7 +22,7 @@ public struct TemplateDirectory {
         return homeDirectory
     }()
 
-    public static let baseURL: URL = {
+    public static let basePath: URL = {
         let XcodeFileTemplateDirectory = TemplateDirectory.homeDirectory
             .appendingPathComponent("Library")
             .appendingPathComponent("Developer")
@@ -33,31 +33,31 @@ public struct TemplateDirectory {
         return XcodeFileTemplateDirectory
     }()
 
-    public static let hostURLs: [URL] = {
-        return TemplateDirectory.directoryContents(path: TemplateDirectory.baseURL)
+    public static let hostPaths: [URL] = {
+        return TemplateDirectory.directoryContents(path: TemplateDirectory.basePath)
     }()
 
-    public static let userURLs: [URL] = {
+    public static let userPaths: [URL] = {
         var users = [URL]()
-        for host in TemplateDirectory.hostURLs {
+        for host in TemplateDirectory.hostPaths {
             users += TemplateDirectory.directoryContents(path: host)
         }
 
         return users
     }()
 
-    public static let repositoryURLs: [URL] = {
+    public static let repositoryPaths: [URL] = {
         var repos = [URL]()
-        for user in TemplateDirectory.userURLs {
+        for user in TemplateDirectory.userPaths {
             repos += TemplateDirectory.directoryContents(path: user)
         }
 
         return repos
     }()
 
-    public static let templateURLs: [URL] = {
+    public static let templatePaths: [URL] = {
         var templates = [URL]()
-        for repository in TemplateDirectory.repositoryURLs {
+        for repository in TemplateDirectory.repositoryPaths {
             templates += TemplateDirectory.directoryContents(path: repository, handlingTemplate: true).filter {
                 $0.pathExtension == TemplateDirectory.templatePathExtension
             }
@@ -67,7 +67,7 @@ public struct TemplateDirectory {
     }()
 
     public static let templates: [Template] = {
-        return TemplateDirectory.templateURLs.map { Template(path: $0) }
+        return TemplateDirectory.templatePaths.map { Template(path: $0) }
     }()
 
     public static func search(name: String) -> [Template] {
@@ -82,7 +82,7 @@ public struct TemplateDirectory {
     }
 
     public static func removeDirectory(url: URL) -> SignalProducer<String, DonutError> {
-        let taskDescription = Task("/usr/bin/env", arguments: ["rm", "-rf", "\(url.host!)/\(url.path)"], workingDirectoryPath: TemplateDirectory.baseURL.path, environment: nil)
+        let taskDescription = Task("/usr/bin/env", arguments: ["rm", "-rf", "\(url.host!)/\(url.path)"], workingDirectoryPath: TemplateDirectory.basePath.path, environment: nil)
         return taskDescription.launch()
             .ignoreTaskData()
             .mapError(DonutError.taskError)
@@ -92,7 +92,7 @@ public struct TemplateDirectory {
     }
 
     public static func makeDirectory(url: URL) -> SignalProducer<String, DonutError> {
-        let taskDescription = Task("/usr/bin/env", arguments: ["mkdir", "-p", "\(url.host!)/\(url.path)"], workingDirectoryPath: TemplateDirectory.baseURL.path, environment: nil)
+        let taskDescription = Task("/usr/bin/env", arguments: ["mkdir", "-p", "\(url.host!)/\(url.path)"], workingDirectoryPath: TemplateDirectory.basePath.path, environment: nil)
         return taskDescription.launch()
             .ignoreTaskData()
             .mapError(DonutError.taskError)
@@ -102,7 +102,7 @@ public struct TemplateDirectory {
     }
 
     public static func removeTemplate(template: Template) -> SignalProducer<String, DonutError> {
-        let taskDescription = Task("/usr/bin/env", arguments: ["rm", "-rf", "github.com/natmark/Donut/ProcessingKit.xctemplate"], workingDirectoryPath: TemplateDirectory.baseURL.path, environment: nil)
+        let taskDescription = Task("/usr/bin/env", arguments: ["rm", "-rf", "\(template.path.path)"], workingDirectoryPath: TemplateDirectory.basePath.path, environment: nil)
 
         return taskDescription.launch()
             .ignoreTaskData()
