@@ -1,2 +1,2 @@
 # Donut
-Xcode template manager
+Xcode file template manager
