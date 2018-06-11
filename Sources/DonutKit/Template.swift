@@ -41,4 +41,8 @@ extension Template {
             .deletingLastPathComponent() // user
             .lastPathComponent // host
     }
+
+    public var version: String {
+        return Git.getGitTagFromLocalRepo(url: self.path) ?? "undefined"
+    }
 }
