@@ -9,21 +9,36 @@ import Foundation
 import Commandant
 import Result
 import DonutKit
+import Curry
 
 public struct TemplateList {
-    public static func show() {
+    public static func show(all: Bool) {
         let templates = TemplateDirectory.templates
         for template in templates {
-            Swift.print([template.host, template.user, template.repository, template.name].joined(separator: "/"))
+            if all {
+                Swift.print("\([template.host, template.user, template.repository, template.name].joined(separator: "/"))(\(template.version))")
+            } else {
+                Swift.print("\(template.name)(\(template.version))")
+            }
         }
     }
 }
 
 public struct ListCommand: CommandProtocol {
+    public typealias Options = ListOptions
     public let verb = "list"
     public let function = "Display the list of installed Xcode file templates"
-    public func run(_ options: NoOptions<DonutError>) -> Result<(), DonutError> {
-        TemplateList.show()
+    public func run(_ options: ListOptions) -> Result<(), DonutError> {
+        TemplateList.show(all: options.all)
         return .success(())
+    }
+}
+
+public struct ListOptions: OptionsProtocol {
+    let all: Bool
+
+    public static func evaluate(_ m: CommandMode) -> Result<ListOptions, CommandantError<DonutError>> {
+        return curry(self.init)
+            <*> m <| Option(key: "all", defaultValue: false, usage: "Show full address of templates")
     }
 }

@@ -85,6 +85,10 @@ public struct Git {
             }
     }
 
+    public static func getGitTagFromLocalRepo(url: URL) -> String? {
+        return launchGitTask(["rev-parse", "--abbrev-ref", "HEAD"], repositoryFileURL: url, standardInput: nil, environment: nil).first()?.value
+    }
+
     public static func checkExistenceOfRemoteRepoWith(url: URL, version: String) -> SignalProducer<Commit, DonutError> {
         return launchGitTask(["ls-remote", "-t", url.absoluteString])
             .mapError { _ -> DonutError in
