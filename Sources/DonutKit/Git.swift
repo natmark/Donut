@@ -34,7 +34,7 @@ public struct Git {
             return SignalProducer(error: result.error ?? DonutError.internalError(description: "Cannot access to Git remote repository"))
         }
 
-        print("*Found \(url.absoluteString) (\(version))")
+        Swift.print("*Found \(url.absoluteString) (\(version))")
 
         return TemplateDirectory.removeDirectory(url: url)
             .attemptMap { _ in

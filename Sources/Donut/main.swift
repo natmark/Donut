@@ -11,6 +11,7 @@ let registry = CommandRegistry<DonutError>()
 registry.register(VersionCommand())
 registry.register(ListCommand())
 registry.register(InstallCommand())
+registry.register(RemoveCommand())
 
 let helpCommand = HelpCommand(registry: registry)
 registry.register(helpCommand)

@@ -32,6 +32,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		E706DA7C20CE724D00504C67 /* RemoveCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E706DA7A20CE721000504C67 /* RemoveCommand.swift */; };
 		OBJ_103 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Package.swift */; };
 		OBJ_109 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Curry.swift */; };
 		OBJ_116 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Package.swift */; };
@@ -268,6 +269,7 @@
 		"Donut::Donut::Product" /* Donut */ = {isa = PBXFileReference; lastKnownFileType = text; path = Donut; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Donut::DonutKit::Product" /* DonutKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DonutKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Donut::DonutTests::Product" /* DonutTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DonutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E706DA7A20CE721000504C67 /* RemoveCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveCommand.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Git.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
 		OBJ_11 /* SemanticVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanticVersion.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
@@ -420,6 +422,7 @@
 				OBJ_16 /* InstallCommand.swift */,
 				OBJ_17 /* ListCommand.swift */,
 				OBJ_18 /* VersionCommand.swift */,
+				E706DA7A20CE721000504C67 /* RemoveCommand.swift */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -522,7 +525,7 @@
 			path = ".build/checkouts/ReactiveSwift.git-5417491714505190452/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -531,7 +534,6 @@
 				OBJ_22 /* Dependencies */,
 				OBJ_71 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_66 /* Result 3.2.4 */ = {
@@ -840,7 +842,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -896,6 +898,7 @@
 			files = (
 				OBJ_122 /* InstallCommand.swift in Sources */,
 				OBJ_123 /* ListCommand.swift in Sources */,
+				E706DA7C20CE724D00504C67 /* RemoveCommand.swift in Sources */,
 				OBJ_124 /* VersionCommand.swift in Sources */,
 				OBJ_125 /* main.swift in Sources */,
 			);
