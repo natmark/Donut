@@ -63,7 +63,7 @@ public struct RemoveCommand: CommandProtocol {
     private func removeTemplate(template: Template) -> Result<(), DonutError> {
         let templateName = template.formattedString()
 
-        if TemplateDirectory.directoryContents(path: template.path.deletingLastPathComponent(),handlingTemplate: true).count == 1,
+        if TemplateDirectory.directoryContents(path: template.path.deletingLastPathComponent(), handlingTemplate: true).count == 1,
             let remoteRepoURL = template.remoteRepoURL {
 
             guard let result = TemplateDirectory.removeDirectory(url: remoteRepoURL).first() else {
@@ -98,6 +98,6 @@ public struct RemoveOptions: OptionsProtocol {
             <*> m <| Option(key: "safe", defaultValue: false, usage: "disable --force-yes if multi template files found")
             <*> m <| Option(key: "force-yes", defaultValue: false, usage: "No show dialog when remove template")
             <*> m <| Argument(usage: "template name")
-        
+
     }
 }

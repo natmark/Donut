@@ -75,4 +75,3 @@ extension Template {
         return result
     }
 }
-
