@@ -58,7 +58,7 @@ public struct TemplateDirectory {
     public static let templateURLs: [URL] = {
         var templates = [URL]()
         for repository in TemplateDirectory.repositoryURLs {
-            templates += TemplateDirectory.directoryContents(url: repository).filter {
+            templates += TemplateDirectory.directoryContents(url: repository, handlingTemplate: true).filter {
                 $0.pathExtension == TemplateDirectory.templatePathExtension
             }
         }
@@ -90,7 +90,7 @@ public struct TemplateDirectory {
         }
     }
 
-    private static func directoryContents(url: URL) -> [URL] {
+    private static func directoryContents(url: URL, handlingTemplate: Bool = false) -> [URL] {
         guard let directoryContents = try? FileManager.default.contentsOfDirectory(
             at: url,
             includingPropertiesForKeys: nil,
@@ -99,6 +99,11 @@ public struct TemplateDirectory {
         else {
             return []
         }
+
+        if !handlingTemplate {
+            return directoryContents.filter { $0.pathExtension != TemplateDirectory.templatePathExtension }
+        }
+
         return directoryContents
     }
 }
