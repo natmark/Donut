@@ -16,9 +16,9 @@ public struct TemplateList {
         let templates = TemplateDirectory.templates
         for template in templates {
             if all {
-                Swift.print("\([template.host, template.user, template.repository, template.name].joined(separator: "/"))(\(template.version))")
+                Swift.print(template.formattedString(all: true))
             } else {
-                Swift.print("\(template.name)(\(template.version))")
+                Swift.print(template.formattedString(all: false))
             }
         }
     }

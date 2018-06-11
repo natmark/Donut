@@ -8,7 +8,7 @@
 import Foundation
 
 public struct Template {
-    let path: URL
+    public let path: URL
 
     public init(path: URL) {
         self.path = path
@@ -16,7 +16,21 @@ public struct Template {
 }
 
 extension Template {
+    public var remoteFileURL: URL? {
+        return URL(string: "https://\(self.host)/\(self.user)/\(self.repository)/\(self.nameWithExtension)")
+    }
+
+    public var remoteRepoURL: URL? {
+        return URL(string: "https://\(self.host)/\(self.user)/\(self.repository)")
+    }
+
     public var name: String {
+        return self.path
+            .deletingPathExtension()
+            .lastPathComponent // template (remove extension)
+    }
+
+    public var nameWithExtension: String {
         return self.path
             .lastPathComponent // template
     }
@@ -44,5 +58,20 @@ extension Template {
 
     public var version: String {
         return Git.getGitTagFromLocalRepo(url: self.path) ?? "undefined"
+    }
+
+    public func formattedString(all: Bool = true, version: Bool = true) -> String {
+        var result = ""
+        if all {
+            result = "\([self.host, self.user, self.repository, self.nameWithExtension].joined(separator: "/"))"
+        } else {
+            result = "\(self.nameWithExtension)"
+        }
+
+        if version {
+            result += " (\(self.version))"
+        }
+
+        return result
     }
 }
