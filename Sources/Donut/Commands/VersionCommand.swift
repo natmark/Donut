@@ -19,7 +19,7 @@ public struct VersionCommand: CommandProtocol {
     public let verb = "version"
     public let function = "Display the current version of Donut"
     public func run(_ options: NoOptions<DonutError>) -> Result<(), DonutError> {
-        Swift.print("🍩 Donut version \(DonutVersion.current.value.toString())")
+        Swift.print("🍩", "Donut version \(DonutVersion.current.value.toString())")
         return .success(())
     }
 }
