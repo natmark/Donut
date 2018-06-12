@@ -6,25 +6,21 @@
 //___COPYRIGHT___
 //
 
-#if os(iOS)
-import UIKit
-#elseif os(OSX)
-import Cocoa
-#endif
+import Donut
 
-class ___FILEBASENAMEASIDENTIFIER___: Donut {
-    let name: String {
+struct ___FILEBASENAMEASIDENTIFIER___: Donut {
+    var name: String {
         return "Chocolate"
     }
 
-    let cost: Float {
+    var cost: Float {
         return 1.25
     }
 
-    let ingredients: [String: Any] = {
+    var ingredients: [String: Any] = {
         return [
             "all purpose flour":  "1 cup",
             "baking powder": "1tsp",
         ]
-    }
+    }()
 }
