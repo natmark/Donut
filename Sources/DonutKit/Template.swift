@@ -57,7 +57,7 @@ extension Template {
     }
 
     public var version: String {
-        return Git.getGitTagFromLocalRepo(url: self.path) ?? "undefined"
+        return Git.getGitTagFromLocalRepo(url: self.path)?.replacingOccurrences(of: "\n", with: "") ?? "undefined"
     }
 
     public func formattedString(all: Bool = true, version: Bool = true) -> String {

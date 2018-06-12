@@ -57,7 +57,15 @@ public struct Git {
             .attemptMap { _ in
                 launchGitTask(["ls-tree", "--name-only", "-r", commit.id], repositoryFileURL: dirPath, standardInput: nil, environment: nil)
                     .flatMap(.latest) { input -> SignalProducer<[String], DonutError> in
-                        let files = input.components(separatedBy: "\n").dropLast().filter { $0.hasSuffix(".xctemplate") }
+                        let files = Array(Set(input.components(separatedBy: "\n").dropLast()
+                            .filter { $0.contains(".xctemplate") }
+                            .map {
+                                $0.components(separatedBy: "/")
+                                    .filter { $0.contains(".xctemplate") }.first
+                            }
+                            .filter { $0 != nil }
+                            .map { $0! }))
+
                         if files.count == 0 {
                             return SignalProducer(error: DonutError.templateFileNotFoundError)
                         }
