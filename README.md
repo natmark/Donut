@@ -23,7 +23,8 @@ Donut is a manager that installs Xcode file template.
 ## Installation -->
 <h2><img src="https://github.com/natmark/Donut/blob/master/Resources/donut3.png?raw=true" width="3%">&nbsp;Installation</h2>
 
-- TBD
+### Using [Mint](https://github.com/yonaskolb/Mint):
+`$ mint install natmark/Donut`
 
 <!-- 
 ## Usage -->
