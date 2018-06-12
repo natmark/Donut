@@ -14,6 +14,7 @@ import Curry
 public struct TemplateList {
     public static func show(all: Bool) {
         let templates = TemplateDirectory.templates
+        Swift.print("\(templates.count) templates are installed")
         for template in templates {
             if all {
                 Swift.print(template.formattedString(all: true))
