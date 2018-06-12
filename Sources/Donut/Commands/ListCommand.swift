@@ -14,12 +14,12 @@ import Curry
 public struct TemplateList {
     public static func show(all: Bool) {
         let templates = TemplateDirectory.templates
-        Swift.print("\(templates.count) templates are installed")
+        Swift.print("🍩 \(templates.count) templates are installed")
         for template in templates {
             if all {
-                Swift.print(template.formattedString(all: true))
+                Swift.print("* \(template.formattedString(all: true))")
             } else {
-                Swift.print(template.formattedString(all: false))
+                Swift.print("* \(template.formattedString(all: false))")
             }
         }
     }

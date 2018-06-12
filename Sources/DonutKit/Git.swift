@@ -34,7 +34,7 @@ public struct Git {
             return SignalProducer(error: result.error ?? DonutError.internalError(description: "Cannot access to Git remote repository"))
         }
 
-        Swift.print("Found \(url.absoluteString) (\(version))")
+        Swift.print("🍩 Found \(url.absoluteString) (\(version))")
 
         return TemplateDirectory.removeDirectory(url: url)
             .attemptMap { _ in
@@ -49,6 +49,9 @@ public struct Git {
                 //TODO: Error if origin already exists
                 launchGitTask(["remote", "add", "origin", url.absoluteString], repositoryFileURL: dirPath, standardInput: nil, environment: nil)
                     .first()!
+            }
+            .map { _ in
+                Swift.print("🍩 Searching .xctemplate from remote repository") //MEMO: Log for faking the wait time of the fetch :D
             }
             .attemptMap { _ in
                 launchGitTask(["fetch", "origin", commit.id], repositoryFileURL: dirPath, standardInput: nil, environment: nil)
@@ -73,12 +76,18 @@ public struct Git {
                     }
                     .first()!
             }
+            .map { files -> [String] in
+                for file in files {
+                    Swift.print("🍩 Found \(file)")
+                }
+                return files
+            }
             .attemptMap { files in
                 launchGitTask(["checkout", commit.id, "--"] + files, repositoryFileURL: dirPath, standardInput: nil, environment: nil)
                     .first()!
             }
             .map { _ in
-                Swift.print("Checkout from \(url.absoluteString)")
+                Swift.print("🍩 Checkout from \(url.absoluteString)")
             }
             .attemptMap { _ in
                 launchGitTask(["checkout", "-b", commit.version], repositoryFileURL: dirPath, standardInput: nil, environment: nil)
@@ -89,7 +98,7 @@ public struct Git {
                     .first()!
             }
             .map { _ in
-                Swift.print("Successfully installed \(url.absoluteString) (\(version))")
+                Swift.print("🍩 Successfully installed \(url.absoluteString) (\(version))")
             }
     }
 

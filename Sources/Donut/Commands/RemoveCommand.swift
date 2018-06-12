@@ -40,8 +40,8 @@ public struct RemoveCommand: CommandProtocol {
             }
 
         } else if let template = templates.first {
-            Swift.print("Found templates:")
-            Swift.print(template.formattedString(), terminator: "\n\n")
+            Swift.print("🍩 Found templates:")
+            Swift.print("*\(template.formattedString())", terminator: "\n\n")
 
             var input = ""
             repeat {
@@ -87,7 +87,7 @@ public struct RemoveCommand: CommandProtocol {
             }
         }
 
-        Swift.print("Successfully uninstalled \(templateName)")
+        Swift.print("🍩 Successfully uninstalled \(templateName)")
         return .success(())
     }
 }
