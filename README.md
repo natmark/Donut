@@ -9,8 +9,11 @@ Donut is a manager that installs Xcode file template.
 ## Demo -->
 <h2><img src="https://github.com/natmark/Donut/blob/master/Resources/donut1.png?raw=true" width="3%">&nbsp;Demo</h2>
 
-- Install `Donut.xctemplate` from [natmark/Donut/Donut.xctemplate](https://github.com/natmark/Donut/tree/master/Donut.xctemplate)
-- TBD
+- Install `Donut.xctemplate` from [natmark/Donut](https://github.com/natmark/Donut/)
+
+<img src="https://github.com/natmark/Donut/blob/natmark/UpdateReadme/Resources/templateIcon.png?raw=true" width="5%">
+
+![Demo](https://github.com/natmark/Donut/blob/natmark/UpdateReadme/Resources/Demo.gif?raw=true)
 
 <!-- 
 ## Requirements -->
@@ -23,7 +26,8 @@ Donut is a manager that installs Xcode file template.
 ## Installation -->
 <h2><img src="https://github.com/natmark/Donut/blob/master/Resources/donut3.png?raw=true" width="3%">&nbsp;Installation</h2>
 
-- TBD
+### Using [Mint](https://github.com/yonaskolb/Mint):
+`$ mint install natmark/Donut`
 
 <!-- 
 ## Usage -->
