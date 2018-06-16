@@ -6,7 +6,7 @@
              alt="Build Status">
     </a>
     <a href="https://github.com/apple/swift">
-        <img alt="Swift" src="https://img.shields.io/badge/swift-4.0-orange.svg">
+        <img alt="Swift" src="https://img.shields.io/badge/swift-4.1-orange.svg">
     </a>
     <a href="https://github.com/yonaskolb/Mint">
         <img src="https://img.shields.io/badge/Mint-compatible-brightgreen.svg?style=flat"
