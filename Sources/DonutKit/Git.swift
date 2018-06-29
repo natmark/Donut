@@ -112,7 +112,7 @@ public struct Git {
                 return DonutError.repositoryNotFoundError
             }
             .flatMap(.latest) { input -> SignalProducer<Commit, DonutError> in
-                let tags = input.components(separatedBy: "\n").dropLast().map { $0.components(separatedBy: "\t") }.map { Commit(id: $0[0], version: $0[1].replacingOccurrences(of: "refs/tags/", with: "")) }
+                let tags = input.components(separatedBy: "\n").dropLast().map { $0.components(separatedBy: "\t") }.map { Commit(id: $0[0], version: $0[1].replacingOccurrences(of: "refs/tags/", with: "").replacingOccurrences(of: "^{}", with: "")) }
                 if version == "latest" && tags.count > 0 {
                     return SignalProducer(value: tags.last!)
                 }
