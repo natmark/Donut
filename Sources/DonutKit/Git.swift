@@ -54,7 +54,7 @@ public struct Git {
                 Swift.print("🍩", "Searching .xctemplate from remote repository") //MEMO: Log for faking the wait time of the fetch :D
             }
             .attemptMap { _ in
-                launchGitTask(["fetch", "origin", commit.id], repositoryFileURL: dirPath, standardInput: nil, environment: nil)
+                launchGitTask(["fetch", "origin", commit.id, "--depth=1"], repositoryFileURL: dirPath, standardInput: nil, environment: nil)
                     .first()!
             }
             .attemptMap { _ in
