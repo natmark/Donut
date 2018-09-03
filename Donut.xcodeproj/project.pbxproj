@@ -9,22 +9,22 @@
 /* Begin PBXAggregateTarget section */
 		"Donut::DonutPackageTests::ProductTarget" /* DonutPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_165 /* Build configuration list for PBXAggregateTarget "DonutPackageTests" */;
+			buildConfigurationList = OBJ_357 /* Build configuration list for PBXAggregateTarget "DonutPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_168 /* PBXTargetDependency */,
+				OBJ_360 /* PBXTargetDependency */,
 			);
 			name = DonutPackageTests;
 			productName = DonutPackageTests;
 		};
 		"Donut::donut::ProductTarget" /* donut */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_255 /* Build configuration list for PBXAggregateTarget "donut" */;
+			buildConfigurationList = OBJ_556 /* Build configuration list for PBXAggregateTarget "donut" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_258 /* PBXTargetDependency */,
+				OBJ_559 /* PBXTargetDependency */,
 			);
 			name = donut;
 			productName = donut;
@@ -32,229 +32,568 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		E706DA7C20CE724D00504C67 /* RemoveCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E706DA7A20CE721000504C67 /* RemoveCommand.swift */; };
-		OBJ_103 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Package.swift */; };
-		OBJ_109 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Curry.swift */; };
-		OBJ_116 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Package.swift */; };
-		OBJ_122 /* InstallCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* InstallCommand.swift */; };
-		OBJ_123 /* ListCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* ListCommand.swift */; };
-		OBJ_124 /* VersionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* VersionCommand.swift */; };
-		OBJ_125 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* main.swift */; };
-		OBJ_127 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Curry::Curry::Product" /* Curry.framework */; };
-		OBJ_128 /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Commandant::Commandant::Product" /* Commandant.framework */; };
-		OBJ_129 /* DonutKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Donut::DonutKit::Product" /* DonutKit.framework */; };
-		OBJ_130 /* ReactiveTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ReactiveTask::ReactiveTask::Product" /* ReactiveTask.framework */; };
-		OBJ_131 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ReactiveSwift::ReactiveSwift::Product" /* ReactiveSwift.framework */; };
-		OBJ_132 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Result::Result::Product" /* Result.framework */; };
-		OBJ_146 /* DonutErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DonutErrors.swift */; };
-		OBJ_147 /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Git.swift */; };
-		OBJ_148 /* SemanticVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* SemanticVersion.swift */; };
-		OBJ_149 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Template.swift */; };
-		OBJ_150 /* TemplateDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* TemplateDirectory.swift */; };
-		OBJ_152 /* ReactiveTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ReactiveTask::ReactiveTask::Product" /* ReactiveTask.framework */; };
-		OBJ_153 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ReactiveSwift::ReactiveSwift::Product" /* ReactiveSwift.framework */; };
-		OBJ_154 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Result::Result::Product" /* Result.framework */; };
-		OBJ_163 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_174 /* TemplateDirectoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* TemplateDirectoryTests.swift */; };
-		OBJ_176 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Curry::Curry::Product" /* Curry.framework */; };
-		OBJ_177 /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Commandant::Commandant::Product" /* Commandant.framework */; };
-		OBJ_178 /* DonutKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Donut::DonutKit::Product" /* DonutKit.framework */; };
-		OBJ_179 /* ReactiveTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ReactiveTask::ReactiveTask::Product" /* ReactiveTask.framework */; };
-		OBJ_180 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ReactiveSwift::ReactiveSwift::Product" /* ReactiveSwift.framework */; };
-		OBJ_181 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Result::Result::Product" /* Result.framework */; };
-		OBJ_193 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Action.swift */; };
-		OBJ_194 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Atomic.swift */; };
-		OBJ_195 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Bag.swift */; };
-		OBJ_196 /* Deprecations+Removals.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Deprecations+Removals.swift */; };
-		OBJ_197 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Disposable.swift */; };
-		OBJ_198 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Event.swift */; };
-		OBJ_199 /* EventLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* EventLogger.swift */; };
-		OBJ_200 /* Flatten.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* Flatten.swift */; };
-		OBJ_201 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* FoundationExtensions.swift */; };
-		OBJ_202 /* Lifetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Lifetime.swift */; };
-		OBJ_203 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Observer.swift */; };
-		OBJ_204 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* Optional.swift */; };
-		OBJ_205 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* Property.swift */; };
-		OBJ_206 /* Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* Reactive.swift */; };
-		OBJ_207 /* ResultExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* ResultExtensions.swift */; };
-		OBJ_208 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* Scheduler.swift */; };
-		OBJ_209 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* Signal.swift */; };
-		OBJ_210 /* SignalProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* SignalProducer.swift */; };
-		OBJ_211 /* UnidirectionalBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* UnidirectionalBinding.swift */; };
-		OBJ_212 /* UninhabitedTypeGuards.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* UninhabitedTypeGuards.swift */; };
-		OBJ_213 /* ValidatingProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* ValidatingProperty.swift */; };
-		OBJ_215 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Result::Result::Product" /* Result.framework */; };
-		OBJ_222 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Package.swift */; };
-		OBJ_227 /* Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Availability.swift */; };
-		OBJ_228 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Errors.swift */; };
-		OBJ_229 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Task.swift */; };
-		OBJ_231 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ReactiveSwift::ReactiveSwift::Product" /* ReactiveSwift.framework */; };
-		OBJ_232 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Result::Result::Product" /* Result.framework */; };
-		OBJ_240 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Package.swift */; };
-		OBJ_245 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* Result.swift */; };
-		OBJ_246 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* ResultProtocol.swift */; };
-		OBJ_253 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* Package.swift */; };
-		OBJ_85 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Argument.swift */; };
-		OBJ_86 /* ArgumentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* ArgumentParser.swift */; };
-		OBJ_87 /* ArgumentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* ArgumentProtocol.swift */; };
-		OBJ_88 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Command.swift */; };
-		OBJ_89 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Errors.swift */; };
-		OBJ_90 /* HelpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* HelpCommand.swift */; };
-		OBJ_91 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Option.swift */; };
-		OBJ_92 /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* OrderedSet.swift */; };
-		OBJ_93 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Switch.swift */; };
-		OBJ_95 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Result::Result::Product" /* Result.framework */; };
+		OBJ_198 /* Await.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Await.swift */; };
+		OBJ_199 /* ByteString.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* ByteString.swift */; };
+		OBJ_200 /* CStringArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* CStringArray.swift */; };
+		OBJ_201 /* CacheableSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* CacheableSequence.swift */; };
+		OBJ_202 /* CollectionAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* CollectionAlgorithms.swift */; };
+		OBJ_203 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* CollectionExtensions.swift */; };
+		OBJ_204 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Condition.swift */; };
+		OBJ_205 /* DeltaAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* DeltaAlgorithm.swift */; };
+		OBJ_206 /* DiagnosticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* DiagnosticsEngine.swift */; };
+		OBJ_207 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* DictionaryExtensions.swift */; };
+		OBJ_208 /* DictionaryLiteralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* DictionaryLiteralExtensions.swift */; };
+		OBJ_209 /* EditDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* EditDistance.swift */; };
+		OBJ_210 /* FileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* FileSystem.swift */; };
+		OBJ_211 /* GraphAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* GraphAlgorithms.swift */; };
+		OBJ_212 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* JSON.swift */; };
+		OBJ_213 /* JSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* JSONMapper.swift */; };
+		OBJ_214 /* KeyedPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* KeyedPair.swift */; };
+		OBJ_215 /* LazyCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* LazyCache.swift */; };
+		OBJ_216 /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* Lock.swift */; };
+		OBJ_217 /* ObjectIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* ObjectIdentifierProtocol.swift */; };
+		OBJ_218 /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* OrderedSet.swift */; };
+		OBJ_219 /* OutputByteStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* OutputByteStream.swift */; };
+		OBJ_220 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* Path.swift */; };
+		OBJ_221 /* PathShims.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* PathShims.swift */; };
+		OBJ_222 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* Process.swift */; };
+		OBJ_223 /* ProcessSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* ProcessSet.swift */; };
+		OBJ_224 /* RegEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* RegEx.swift */; };
+		OBJ_225 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* Result.swift */; };
+		OBJ_226 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* SHA256.swift */; };
+		OBJ_227 /* SortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* SortedArray.swift */; };
+		OBJ_228 /* StringConversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* StringConversions.swift */; };
+		OBJ_229 /* SynchronizedQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* SynchronizedQueue.swift */; };
+		OBJ_230 /* TemporaryFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* TemporaryFile.swift */; };
+		OBJ_231 /* TerminalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* TerminalController.swift */; };
+		OBJ_232 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* Thread.swift */; };
+		OBJ_233 /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* Tuple.swift */; };
+		OBJ_234 /* misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* misc.swift */; };
+		OBJ_236 /* POSIX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::POSIX::Product" /* POSIX.framework */; };
+		OBJ_237 /* SPMLibc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::SPMLibc::Product" /* SPMLibc.framework */; };
+		OBJ_238 /* clibc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::clibc::Product" /* clibc.framework */; };
+		OBJ_250 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_133 /* Argument.swift */; };
+		OBJ_251 /* ArgumentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_134 /* ArgumentParser.swift */; };
+		OBJ_252 /* ArgumentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* ArgumentProtocol.swift */; };
+		OBJ_253 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* Command.swift */; };
+		OBJ_254 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* Errors.swift */; };
+		OBJ_255 /* HelpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_138 /* HelpCommand.swift */; };
+		OBJ_256 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_139 /* Option.swift */; };
+		OBJ_257 /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_140 /* OrderedSet.swift */; };
+		OBJ_258 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_141 /* Switch.swift */; };
+		OBJ_260 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Result::Result::Product" /* Result.framework */; };
+		OBJ_268 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_142 /* Package.swift */; };
+		OBJ_274 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_130 /* Curry.swift */; };
+		OBJ_281 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_129 /* Package.swift */; };
+		OBJ_287 /* InstallCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* InstallCommand.swift */; };
+		OBJ_288 /* ListCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* ListCommand.swift */; };
+		OBJ_289 /* RemoveCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* RemoveCommand.swift */; };
+		OBJ_290 /* VersionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* VersionCommand.swift */; };
+		OBJ_291 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* main.swift */; };
+		OBJ_293 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Curry::Curry::Product" /* Curry.framework */; };
+		OBJ_294 /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Commandant::Commandant::Product" /* Commandant.framework */; };
+		OBJ_295 /* DonutKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Donut::DonutKit::Product" /* DonutKit.framework */; };
+		OBJ_296 /* ProgressSpinnerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ProgressSpinnerKit::ProgressSpinnerKit::Product" /* ProgressSpinnerKit.framework */; };
+		OBJ_297 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::Utility::Product" /* Utility.framework */; };
+		OBJ_298 /* Basic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::Basic::Product" /* Basic.framework */; };
+		OBJ_299 /* POSIX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::POSIX::Product" /* POSIX.framework */; };
+		OBJ_300 /* SPMLibc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::SPMLibc::Product" /* SPMLibc.framework */; };
+		OBJ_301 /* clibc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::clibc::Product" /* clibc.framework */; };
+		OBJ_302 /* ReactiveTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ReactiveTask::ReactiveTask::Product" /* ReactiveTask.framework */; };
+		OBJ_303 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ReactiveSwift::ReactiveSwift::Product" /* ReactiveSwift.framework */; };
+		OBJ_304 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Result::Result::Product" /* Result.framework */; };
+		OBJ_326 /* DonutErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DonutErrors.swift */; };
+		OBJ_327 /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Git.swift */; };
+		OBJ_328 /* SemanticVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* SemanticVersion.swift */; };
+		OBJ_329 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Template.swift */; };
+		OBJ_330 /* TemplateDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* TemplateDirectory.swift */; };
+		OBJ_332 /* ProgressSpinnerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ProgressSpinnerKit::ProgressSpinnerKit::Product" /* ProgressSpinnerKit.framework */; };
+		OBJ_333 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::Utility::Product" /* Utility.framework */; };
+		OBJ_334 /* Basic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::Basic::Product" /* Basic.framework */; };
+		OBJ_335 /* POSIX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::POSIX::Product" /* POSIX.framework */; };
+		OBJ_336 /* SPMLibc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::SPMLibc::Product" /* SPMLibc.framework */; };
+		OBJ_337 /* clibc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::clibc::Product" /* clibc.framework */; };
+		OBJ_338 /* ReactiveTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ReactiveTask::ReactiveTask::Product" /* ReactiveTask.framework */; };
+		OBJ_339 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ReactiveSwift::ReactiveSwift::Product" /* ReactiveSwift.framework */; };
+		OBJ_340 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Result::Result::Product" /* Result.framework */; };
+		OBJ_355 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_366 /* TemplateDirectoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* TemplateDirectoryTests.swift */; };
+		OBJ_368 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Curry::Curry::Product" /* Curry.framework */; };
+		OBJ_369 /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Commandant::Commandant::Product" /* Commandant.framework */; };
+		OBJ_370 /* DonutKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Donut::DonutKit::Product" /* DonutKit.framework */; };
+		OBJ_371 /* ProgressSpinnerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ProgressSpinnerKit::ProgressSpinnerKit::Product" /* ProgressSpinnerKit.framework */; };
+		OBJ_372 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::Utility::Product" /* Utility.framework */; };
+		OBJ_373 /* Basic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::Basic::Product" /* Basic.framework */; };
+		OBJ_374 /* POSIX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::POSIX::Product" /* POSIX.framework */; };
+		OBJ_375 /* SPMLibc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::SPMLibc::Product" /* SPMLibc.framework */; };
+		OBJ_376 /* clibc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::clibc::Product" /* clibc.framework */; };
+		OBJ_377 /* ReactiveTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ReactiveTask::ReactiveTask::Product" /* ReactiveTask.framework */; };
+		OBJ_378 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ReactiveSwift::ReactiveSwift::Product" /* ReactiveSwift.framework */; };
+		OBJ_379 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Result::Result::Product" /* Result.framework */; };
+		OBJ_397 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* Error.swift */; };
+		OBJ_398 /* chdir.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* chdir.swift */; };
+		OBJ_399 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* env.swift */; };
+		OBJ_400 /* exit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* exit.swift */; };
+		OBJ_401 /* getcwd.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* getcwd.swift */; };
+		OBJ_402 /* isatty.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* isatty.swift */; };
+		OBJ_403 /* readdir.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* readdir.swift */; };
+		OBJ_404 /* realpath.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* realpath.swift */; };
+		OBJ_405 /* rename.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* rename.swift */; };
+		OBJ_406 /* stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* stat.swift */; };
+		OBJ_407 /* usleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* usleep.swift */; };
+		OBJ_409 /* SPMLibc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::SPMLibc::Product" /* SPMLibc.framework */; };
+		OBJ_410 /* clibc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::clibc::Product" /* clibc.framework */; };
+		OBJ_417 /* ProgressSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* ProgressSpinner.swift */; };
+		OBJ_418 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Spinner.swift */; };
+		OBJ_420 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::Utility::Product" /* Utility.framework */; };
+		OBJ_421 /* Basic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::Basic::Product" /* Basic.framework */; };
+		OBJ_422 /* POSIX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::POSIX::Product" /* POSIX.framework */; };
+		OBJ_423 /* SPMLibc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::SPMLibc::Product" /* SPMLibc.framework */; };
+		OBJ_424 /* clibc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::clibc::Product" /* clibc.framework */; };
+		OBJ_435 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Package.swift */; };
+		OBJ_440 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_150 /* Action.swift */; };
+		OBJ_441 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_151 /* Atomic.swift */; };
+		OBJ_442 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_152 /* Bag.swift */; };
+		OBJ_443 /* Deprecations+Removals.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_153 /* Deprecations+Removals.swift */; };
+		OBJ_444 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_154 /* Disposable.swift */; };
+		OBJ_445 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_155 /* Event.swift */; };
+		OBJ_446 /* EventLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_156 /* EventLogger.swift */; };
+		OBJ_447 /* Flatten.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_157 /* Flatten.swift */; };
+		OBJ_448 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_158 /* FoundationExtensions.swift */; };
+		OBJ_449 /* Lifetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_159 /* Lifetime.swift */; };
+		OBJ_450 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_160 /* Observer.swift */; };
+		OBJ_451 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_161 /* Optional.swift */; };
+		OBJ_452 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_162 /* Property.swift */; };
+		OBJ_453 /* Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_163 /* Reactive.swift */; };
+		OBJ_454 /* ResultExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_164 /* ResultExtensions.swift */; };
+		OBJ_455 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_165 /* Scheduler.swift */; };
+		OBJ_456 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_166 /* Signal.swift */; };
+		OBJ_457 /* SignalProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_167 /* SignalProducer.swift */; };
+		OBJ_458 /* UnidirectionalBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_168 /* UnidirectionalBinding.swift */; };
+		OBJ_459 /* UninhabitedTypeGuards.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_169 /* UninhabitedTypeGuards.swift */; };
+		OBJ_460 /* ValidatingProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_170 /* ValidatingProperty.swift */; };
+		OBJ_462 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Result::Result::Product" /* Result.framework */; };
+		OBJ_469 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_149 /* Package.swift */; };
+		OBJ_474 /* Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_145 /* Availability.swift */; };
+		OBJ_475 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_146 /* Errors.swift */; };
+		OBJ_476 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_147 /* Task.swift */; };
+		OBJ_478 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ReactiveSwift::ReactiveSwift::Product" /* ReactiveSwift.framework */; };
+		OBJ_479 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Result::Result::Product" /* Result.framework */; };
+		OBJ_487 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_144 /* Package.swift */; };
+		OBJ_492 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_173 /* AnyError.swift */; };
+		OBJ_493 /* NoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_174 /* NoError.swift */; };
+		OBJ_494 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_175 /* Result.swift */; };
+		OBJ_495 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_176 /* ResultProtocol.swift */; };
+		OBJ_502 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_177 /* Package.swift */; };
+		OBJ_507 /* libc.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* libc.swift */; };
+		OBJ_509 /* clibc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::clibc::Product" /* clibc.framework */; };
+		OBJ_516 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_127 /* Package.swift */; };
+		OBJ_521 /* ArgumentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* ArgumentParser.swift */; };
+		OBJ_522 /* ArgumentParserShellCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* ArgumentParserShellCompletion.swift */; };
+		OBJ_523 /* BuildFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* BuildFlags.swift */; };
+		OBJ_524 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* CollectionExtensions.swift */; };
+		OBJ_525 /* Diagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* Diagnostics.swift */; };
+		OBJ_526 /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* Git.swift */; };
+		OBJ_527 /* InterruptHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_104 /* InterruptHandler.swift */; };
+		OBJ_528 /* PkgConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* PkgConfig.swift */; };
+		OBJ_529 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* Platform.swift */; };
+		OBJ_530 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* Process.swift */; };
+		OBJ_531 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* ProgressBar.swift */; };
+		OBJ_532 /* SimplePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* SimplePersistence.swift */; };
+		OBJ_533 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* StringExtensions.swift */; };
+		OBJ_534 /* StringMangling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* StringMangling.swift */; };
+		OBJ_535 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_112 /* URL.swift */; };
+		OBJ_536 /* Verbosity.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* Verbosity.swift */; };
+		OBJ_537 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* Version.swift */; };
+		OBJ_538 /* Versioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* Versioning.swift */; };
+		OBJ_539 /* misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* misc.swift */; };
+		OBJ_541 /* Basic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::Basic::Product" /* Basic.framework */; };
+		OBJ_542 /* POSIX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::POSIX::Product" /* POSIX.framework */; };
+		OBJ_543 /* SPMLibc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::SPMLibc::Product" /* SPMLibc.framework */; };
+		OBJ_544 /* clibc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPM::clibc::Product" /* clibc.framework */; };
+		OBJ_553 /* libc.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* libc.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E706DA6420CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BAFD213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "Result::Result";
-			remoteInfo = Result;
+			remoteGlobalIDString = "ProgressSpinnerKit::ProgressSpinnerKit";
+			remoteInfo = ProgressSpinnerKit;
 		};
-		E706DA6520CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BAFE213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "ReactiveSwift::ReactiveSwift";
-			remoteInfo = ReactiveSwift;
+			remoteGlobalIDString = "SwiftPM::Utility";
+			remoteInfo = Utility;
 		};
-		E706DA6620CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BAFF213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "Result::Result";
-			remoteInfo = Result;
+			remoteGlobalIDString = "SwiftPM::Basic";
+			remoteInfo = Basic;
 		};
-		E706DA6720CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BB00213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::POSIX";
+			remoteInfo = POSIX;
+		};
+		E7C8BB01213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::SPMLibc";
+			remoteInfo = SPMLibc;
+		};
+		E7C8BB02213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::clibc";
+			remoteInfo = clibc;
+		};
+		E7C8BB03213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::clibc";
+			remoteInfo = clibc;
+		};
+		E7C8BB04213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::SPMLibc";
+			remoteInfo = SPMLibc;
+		};
+		E7C8BB05213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::clibc";
+			remoteInfo = clibc;
+		};
+		E7C8BB06213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::POSIX";
+			remoteInfo = POSIX;
+		};
+		E7C8BB07213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::SPMLibc";
+			remoteInfo = SPMLibc;
+		};
+		E7C8BB08213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::clibc";
+			remoteInfo = clibc;
+		};
+		E7C8BB09213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::Basic";
+			remoteInfo = Basic;
+		};
+		E7C8BB0A213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::POSIX";
+			remoteInfo = POSIX;
+		};
+		E7C8BB0B213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::SPMLibc";
+			remoteInfo = SPMLibc;
+		};
+		E7C8BB0C213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::clibc";
+			remoteInfo = clibc;
+		};
+		E7C8BB0D213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::Utility";
+			remoteInfo = Utility;
+		};
+		E7C8BB0E213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::Basic";
+			remoteInfo = Basic;
+		};
+		E7C8BB0F213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::POSIX";
+			remoteInfo = POSIX;
+		};
+		E7C8BB10213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::SPMLibc";
+			remoteInfo = SPMLibc;
+		};
+		E7C8BB11213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::clibc";
+			remoteInfo = clibc;
+		};
+		E7C8BB12213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "ReactiveTask::ReactiveTask";
 			remoteInfo = ReactiveTask;
 		};
-		E706DA6820CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BB13213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "ReactiveSwift::ReactiveSwift";
 			remoteInfo = ReactiveSwift;
 		};
-		E706DA6920CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BB14213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Result::Result";
 			remoteInfo = Result;
 		};
-		E706DA6A20CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BB15213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Result::Result";
 			remoteInfo = Result;
 		};
-		E706DA6B20CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BB16213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ReactiveSwift::ReactiveSwift";
+			remoteInfo = ReactiveSwift;
+		};
+		E7C8BB17213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Result::Result";
+			remoteInfo = Result;
+		};
+		E7C8BB18213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Curry::Curry";
 			remoteInfo = Curry;
 		};
-		E706DA6C20CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BB19213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Commandant::Commandant";
 			remoteInfo = Commandant;
 		};
-		E706DA6D20CD0EF600504C67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Donut::DonutKit";
-			remoteInfo = DonutKit;
-		};
-		E706DA6E20CD0EF600504C67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "ReactiveTask::ReactiveTask";
-			remoteInfo = ReactiveTask;
-		};
-		E706DA6F20CD0EF600504C67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "ReactiveSwift::ReactiveSwift";
-			remoteInfo = ReactiveSwift;
-		};
-		E706DA7020CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BB1A213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Result::Result";
 			remoteInfo = Result;
 		};
-		E706DA7120CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BB1B213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Donut::DonutKit";
+			remoteInfo = DonutKit;
+		};
+		E7C8BB1C213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ProgressSpinnerKit::ProgressSpinnerKit";
+			remoteInfo = ProgressSpinnerKit;
+		};
+		E7C8BB1D213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::Utility";
+			remoteInfo = Utility;
+		};
+		E7C8BB1E213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::Basic";
+			remoteInfo = Basic;
+		};
+		E7C8BB1F213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::POSIX";
+			remoteInfo = POSIX;
+		};
+		E7C8BB20213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::SPMLibc";
+			remoteInfo = SPMLibc;
+		};
+		E7C8BB21213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::clibc";
+			remoteInfo = clibc;
+		};
+		E7C8BB22213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ReactiveTask::ReactiveTask";
+			remoteInfo = ReactiveTask;
+		};
+		E7C8BB23213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ReactiveSwift::ReactiveSwift";
+			remoteInfo = ReactiveSwift;
+		};
+		E7C8BB24213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Result::Result";
+			remoteInfo = Result;
+		};
+		E7C8BB25213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Donut::Donut";
 			remoteInfo = Donut;
 		};
-		E706DA7220CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BB26213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Curry::Curry";
 			remoteInfo = Curry;
 		};
-		E706DA7320CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BB27213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Commandant::Commandant";
 			remoteInfo = Commandant;
 		};
-		E706DA7420CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BB28213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Donut::DonutKit";
 			remoteInfo = DonutKit;
 		};
-		E706DA7520CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BB29213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ProgressSpinnerKit::ProgressSpinnerKit";
+			remoteInfo = ProgressSpinnerKit;
+		};
+		E7C8BB2A213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::Utility";
+			remoteInfo = Utility;
+		};
+		E7C8BB2B213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::Basic";
+			remoteInfo = Basic;
+		};
+		E7C8BB2C213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::POSIX";
+			remoteInfo = POSIX;
+		};
+		E7C8BB2D213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::SPMLibc";
+			remoteInfo = SPMLibc;
+		};
+		E7C8BB2E213C312A00D4A91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftPM::clibc";
+			remoteInfo = clibc;
+		};
+		E7C8BB2F213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "ReactiveTask::ReactiveTask";
 			remoteInfo = ReactiveTask;
 		};
-		E706DA7620CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BB30213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "ReactiveSwift::ReactiveSwift";
 			remoteInfo = ReactiveSwift;
 		};
-		E706DA7720CD0EF600504C67 /* PBXContainerItemProxy */ = {
+		E7C8BB31213C312A00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Result::Result";
 			remoteInfo = Result;
 		};
-		E706DA7820CD0EF900504C67 /* PBXContainerItemProxy */ = {
+		E7C8BB32213C312C00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Donut::DonutTests";
 			remoteInfo = DonutTests;
 		};
-		E706DA7920CD0EF900504C67 /* PBXContainerItemProxy */ = {
+		E7C8BB33213C312C00D4A91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -269,151 +608,448 @@
 		"Donut::Donut::Product" /* Donut */ = {isa = PBXFileReference; lastKnownFileType = text; path = Donut; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Donut::DonutKit::Product" /* DonutKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DonutKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Donut::DonutTests::Product" /* DonutTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DonutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E706DA7A20CE721000504C67 /* RemoveCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveCommand.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Git.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
+		OBJ_100 /* BuildFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildFlags.swift; sourceTree = "<group>"; };
+		OBJ_101 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
+		OBJ_102 /* Diagnostics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagnostics.swift; sourceTree = "<group>"; };
+		OBJ_103 /* Git.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
+		OBJ_104 /* InterruptHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterruptHandler.swift; sourceTree = "<group>"; };
+		OBJ_105 /* PkgConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PkgConfig.swift; sourceTree = "<group>"; };
+		OBJ_106 /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		OBJ_107 /* Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
+		OBJ_108 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		OBJ_109 /* SimplePersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePersistence.swift; sourceTree = "<group>"; };
 		OBJ_11 /* SemanticVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanticVersion.swift; sourceTree = "<group>"; };
+		OBJ_110 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		OBJ_111 /* StringMangling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMangling.swift; sourceTree = "<group>"; };
+		OBJ_112 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		OBJ_113 /* Verbosity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verbosity.swift; sourceTree = "<group>"; };
+		OBJ_114 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		OBJ_115 /* Versioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Versioning.swift; sourceTree = "<group>"; };
+		OBJ_116 /* misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = misc.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		OBJ_121 /* libc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = libc.c; sourceTree = "<group>"; };
+		OBJ_123 /* clibc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clibc.h; sourceTree = "<group>"; };
+		OBJ_124 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "/Users/AtsuyaSato/Desktop/Donut/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap"; sourceTree = "<group>"; };
+		OBJ_127 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/AtsuyaSato/Desktop/Donut/.build/checkouts/swift-package-manager.git-5579847846518334428/Package.swift"; sourceTree = "<group>"; };
+		OBJ_129 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/AtsuyaSato/Desktop/Donut/.build/checkouts/Curry.git-7507656763410610606/Package.swift"; sourceTree = "<group>"; };
 		OBJ_13 /* TemplateDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateDirectory.swift; sourceTree = "<group>"; };
+		OBJ_130 /* Curry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
+		OBJ_133 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
+		OBJ_134 /* ArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentParser.swift; sourceTree = "<group>"; };
+		OBJ_135 /* ArgumentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentProtocol.swift; sourceTree = "<group>"; };
+		OBJ_136 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		OBJ_137 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		OBJ_138 /* HelpCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCommand.swift; sourceTree = "<group>"; };
+		OBJ_139 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		OBJ_140 /* OrderedSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedSet.swift; sourceTree = "<group>"; };
+		OBJ_141 /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
+		OBJ_142 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/AtsuyaSato/Desktop/Donut/.build/checkouts/Commandant.git-3062511658102057207/Package.swift"; sourceTree = "<group>"; };
+		OBJ_144 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/AtsuyaSato/Desktop/Donut/.build/checkouts/ReactiveTask.git--7769101310086521155/Package.swift"; sourceTree = "<group>"; };
+		OBJ_145 /* Availability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Availability.swift; sourceTree = "<group>"; };
+		OBJ_146 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		OBJ_147 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		OBJ_149 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/AtsuyaSato/Desktop/Donut/.build/checkouts/ReactiveSwift.git-5417491714505190452/Package.swift"; sourceTree = "<group>"; };
+		OBJ_150 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		OBJ_151 /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
+		OBJ_152 /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
+		OBJ_153 /* Deprecations+Removals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deprecations+Removals.swift"; sourceTree = "<group>"; };
+		OBJ_154 /* Disposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
+		OBJ_155 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		OBJ_156 /* EventLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLogger.swift; sourceTree = "<group>"; };
+		OBJ_157 /* Flatten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flatten.swift; sourceTree = "<group>"; };
+		OBJ_158 /* FoundationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
+		OBJ_159 /* Lifetime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifetime.swift; sourceTree = "<group>"; };
 		OBJ_16 /* InstallCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallCommand.swift; sourceTree = "<group>"; };
+		OBJ_160 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		OBJ_161 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		OBJ_162 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		OBJ_163 /* Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reactive.swift; sourceTree = "<group>"; };
+		OBJ_164 /* ResultExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultExtensions.swift; sourceTree = "<group>"; };
+		OBJ_165 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		OBJ_166 /* Signal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		OBJ_167 /* SignalProducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalProducer.swift; sourceTree = "<group>"; };
+		OBJ_168 /* UnidirectionalBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidirectionalBinding.swift; sourceTree = "<group>"; };
+		OBJ_169 /* UninhabitedTypeGuards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninhabitedTypeGuards.swift; sourceTree = "<group>"; };
 		OBJ_17 /* ListCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCommand.swift; sourceTree = "<group>"; };
-		OBJ_18 /* VersionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionCommand.swift; sourceTree = "<group>"; };
-		OBJ_19 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		OBJ_21 /* TemplateDirectoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateDirectoryTests.swift; sourceTree = "<group>"; };
-		OBJ_24 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/AtsuyaSato/Desktop/Donut/.build/checkouts/Curry.git-7507656763410610606/Package.swift"; sourceTree = "<group>"; };
-		OBJ_25 /* Curry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
-		OBJ_28 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
-		OBJ_29 /* ArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentParser.swift; sourceTree = "<group>"; };
-		OBJ_30 /* ArgumentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentProtocol.swift; sourceTree = "<group>"; };
-		OBJ_31 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
-		OBJ_32 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
-		OBJ_33 /* HelpCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCommand.swift; sourceTree = "<group>"; };
-		OBJ_34 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
-		OBJ_35 /* OrderedSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedSet.swift; sourceTree = "<group>"; };
-		OBJ_36 /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
-		OBJ_37 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/AtsuyaSato/Desktop/Donut/.build/checkouts/Commandant.git-3062511658102057207/Package.swift"; sourceTree = "<group>"; };
-		OBJ_39 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/AtsuyaSato/Desktop/Donut/.build/checkouts/ReactiveTask.git--7769101310086521155/Package.swift"; sourceTree = "<group>"; };
-		OBJ_40 /* Availability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Availability.swift; sourceTree = "<group>"; };
-		OBJ_41 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
-		OBJ_42 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		OBJ_44 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/AtsuyaSato/Desktop/Donut/.build/checkouts/ReactiveSwift.git-5417491714505190452/Package.swift"; sourceTree = "<group>"; };
-		OBJ_45 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
-		OBJ_46 /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
-		OBJ_47 /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
-		OBJ_48 /* Deprecations+Removals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deprecations+Removals.swift"; sourceTree = "<group>"; };
-		OBJ_49 /* Disposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
-		OBJ_50 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		OBJ_51 /* EventLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLogger.swift; sourceTree = "<group>"; };
-		OBJ_52 /* Flatten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flatten.swift; sourceTree = "<group>"; };
-		OBJ_53 /* FoundationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
-		OBJ_54 /* Lifetime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifetime.swift; sourceTree = "<group>"; };
-		OBJ_55 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
-		OBJ_56 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
-		OBJ_57 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
-		OBJ_58 /* Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reactive.swift; sourceTree = "<group>"; };
-		OBJ_59 /* ResultExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultExtensions.swift; sourceTree = "<group>"; };
+		OBJ_170 /* ValidatingProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatingProperty.swift; sourceTree = "<group>"; };
+		OBJ_173 /* AnyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyError.swift; sourceTree = "<group>"; };
+		OBJ_174 /* NoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoError.swift; sourceTree = "<group>"; };
+		OBJ_175 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		OBJ_176 /* ResultProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultProtocol.swift; sourceTree = "<group>"; };
+		OBJ_177 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/AtsuyaSato/Desktop/Donut/.build/checkouts/Result.git-8684547452332391156/Package.swift"; sourceTree = "<group>"; };
+		OBJ_18 /* RemoveCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveCommand.swift; sourceTree = "<group>"; };
+		OBJ_19 /* VersionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionCommand.swift; sourceTree = "<group>"; };
+		OBJ_20 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		OBJ_22 /* TemplateDirectoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateDirectoryTests.swift; sourceTree = "<group>"; };
+		OBJ_23 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = SOURCE_ROOT; };
+		OBJ_24 /* Donut.xctemplate */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Donut.xctemplate; sourceTree = SOURCE_ROOT; };
+		OBJ_28 /* ProgressSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinner.swift; sourceTree = "<group>"; };
+		OBJ_29 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		OBJ_31 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/AtsuyaSato/Desktop/Donut/.build/checkouts/ProgressSpinnerKit--9173164363525898912/Package.swift"; sourceTree = "<group>"; };
+		OBJ_38 /* libc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libc.swift; sourceTree = "<group>"; };
+		OBJ_47 /* Await.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Await.swift; sourceTree = "<group>"; };
+		OBJ_48 /* ByteString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteString.swift; sourceTree = "<group>"; };
+		OBJ_49 /* CStringArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CStringArray.swift; sourceTree = "<group>"; };
+		OBJ_50 /* CacheableSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheableSequence.swift; sourceTree = "<group>"; };
+		OBJ_51 /* CollectionAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAlgorithms.swift; sourceTree = "<group>"; };
+		OBJ_52 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
+		OBJ_53 /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
+		OBJ_54 /* DeltaAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeltaAlgorithm.swift; sourceTree = "<group>"; };
+		OBJ_55 /* DiagnosticsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsEngine.swift; sourceTree = "<group>"; };
+		OBJ_56 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
+		OBJ_57 /* DictionaryLiteralExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryLiteralExtensions.swift; sourceTree = "<group>"; };
+		OBJ_58 /* EditDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDistance.swift; sourceTree = "<group>"; };
+		OBJ_59 /* FileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystem.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_60 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
-		OBJ_61 /* Signal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
-		OBJ_62 /* SignalProducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalProducer.swift; sourceTree = "<group>"; };
-		OBJ_63 /* UnidirectionalBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidirectionalBinding.swift; sourceTree = "<group>"; };
-		OBJ_64 /* UninhabitedTypeGuards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninhabitedTypeGuards.swift; sourceTree = "<group>"; };
-		OBJ_65 /* ValidatingProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatingProperty.swift; sourceTree = "<group>"; };
-		OBJ_68 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		OBJ_69 /* ResultProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultProtocol.swift; sourceTree = "<group>"; };
-		OBJ_70 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/AtsuyaSato/Desktop/Donut/.build/checkouts/Result.git-8684547452332391156/Package.swift"; sourceTree = "<group>"; };
+		OBJ_60 /* GraphAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphAlgorithms.swift; sourceTree = "<group>"; };
+		OBJ_61 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		OBJ_62 /* JSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMapper.swift; sourceTree = "<group>"; };
+		OBJ_63 /* KeyedPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedPair.swift; sourceTree = "<group>"; };
+		OBJ_64 /* LazyCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyCache.swift; sourceTree = "<group>"; };
+		OBJ_65 /* Lock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
+		OBJ_66 /* ObjectIdentifierProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectIdentifierProtocol.swift; sourceTree = "<group>"; };
+		OBJ_67 /* OrderedSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedSet.swift; sourceTree = "<group>"; };
+		OBJ_68 /* OutputByteStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputByteStream.swift; sourceTree = "<group>"; };
+		OBJ_69 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		OBJ_70 /* PathShims.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathShims.swift; sourceTree = "<group>"; };
+		OBJ_71 /* Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
+		OBJ_72 /* ProcessSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessSet.swift; sourceTree = "<group>"; };
+		OBJ_73 /* RegEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegEx.swift; sourceTree = "<group>"; };
+		OBJ_74 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		OBJ_75 /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
+		OBJ_76 /* SortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedArray.swift; sourceTree = "<group>"; };
+		OBJ_77 /* StringConversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConversions.swift; sourceTree = "<group>"; };
+		OBJ_78 /* SynchronizedQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedQueue.swift; sourceTree = "<group>"; };
+		OBJ_79 /* TemporaryFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryFile.swift; sourceTree = "<group>"; };
+		OBJ_80 /* TerminalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalController.swift; sourceTree = "<group>"; };
+		OBJ_81 /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		OBJ_82 /* Tuple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuple.swift; sourceTree = "<group>"; };
+		OBJ_83 /* misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = misc.swift; sourceTree = "<group>"; };
+		OBJ_86 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		OBJ_87 /* chdir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chdir.swift; sourceTree = "<group>"; };
+		OBJ_88 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
+		OBJ_89 /* exit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exit.swift; sourceTree = "<group>"; };
 		OBJ_9 /* DonutErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutErrors.swift; sourceTree = "<group>"; };
+		OBJ_90 /* getcwd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getcwd.swift; sourceTree = "<group>"; };
+		OBJ_91 /* isatty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isatty.swift; sourceTree = "<group>"; };
+		OBJ_92 /* readdir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readdir.swift; sourceTree = "<group>"; };
+		OBJ_93 /* realpath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realpath.swift; sourceTree = "<group>"; };
+		OBJ_94 /* rename.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rename.swift; sourceTree = "<group>"; };
+		OBJ_95 /* stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stat.swift; sourceTree = "<group>"; };
+		OBJ_96 /* usleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usleep.swift; sourceTree = "<group>"; };
+		OBJ_98 /* ArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentParser.swift; sourceTree = "<group>"; };
+		OBJ_99 /* ArgumentParserShellCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentParserShellCompletion.swift; sourceTree = "<group>"; };
+		"ProgressSpinnerKit::ProgressSpinnerKit::Product" /* ProgressSpinnerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProgressSpinnerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"ReactiveSwift::ReactiveSwift::Product" /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"ReactiveTask::ReactiveTask::Product" /* ReactiveTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Result::Result::Product" /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftPM::Basic::Product" /* Basic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Basic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftPM::POSIX::Product" /* POSIX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = POSIX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftPM::SPMLibc::Product" /* SPMLibc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SPMLibc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftPM::Utility::Product" /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftPM::clibc::Product" /* clibc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = clibc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_110 /* Frameworks */ = {
+		OBJ_235 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_236 /* POSIX.framework in Frameworks */,
+				OBJ_237 /* SPMLibc.framework in Frameworks */,
+				OBJ_238 /* clibc.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_259 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_260 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_275 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_126 /* Frameworks */ = {
+		OBJ_292 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_127 /* Curry.framework in Frameworks */,
-				OBJ_128 /* Commandant.framework in Frameworks */,
-				OBJ_129 /* DonutKit.framework in Frameworks */,
-				OBJ_130 /* ReactiveTask.framework in Frameworks */,
-				OBJ_131 /* ReactiveSwift.framework in Frameworks */,
-				OBJ_132 /* Result.framework in Frameworks */,
+				OBJ_293 /* Curry.framework in Frameworks */,
+				OBJ_294 /* Commandant.framework in Frameworks */,
+				OBJ_295 /* DonutKit.framework in Frameworks */,
+				OBJ_296 /* ProgressSpinnerKit.framework in Frameworks */,
+				OBJ_297 /* Utility.framework in Frameworks */,
+				OBJ_298 /* Basic.framework in Frameworks */,
+				OBJ_299 /* POSIX.framework in Frameworks */,
+				OBJ_300 /* SPMLibc.framework in Frameworks */,
+				OBJ_301 /* clibc.framework in Frameworks */,
+				OBJ_302 /* ReactiveTask.framework in Frameworks */,
+				OBJ_303 /* ReactiveSwift.framework in Frameworks */,
+				OBJ_304 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_151 /* Frameworks */ = {
+		OBJ_331 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_152 /* ReactiveTask.framework in Frameworks */,
-				OBJ_153 /* ReactiveSwift.framework in Frameworks */,
-				OBJ_154 /* Result.framework in Frameworks */,
+				OBJ_332 /* ProgressSpinnerKit.framework in Frameworks */,
+				OBJ_333 /* Utility.framework in Frameworks */,
+				OBJ_334 /* Basic.framework in Frameworks */,
+				OBJ_335 /* POSIX.framework in Frameworks */,
+				OBJ_336 /* SPMLibc.framework in Frameworks */,
+				OBJ_337 /* clibc.framework in Frameworks */,
+				OBJ_338 /* ReactiveTask.framework in Frameworks */,
+				OBJ_339 /* ReactiveSwift.framework in Frameworks */,
+				OBJ_340 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_175 /* Frameworks */ = {
+		OBJ_367 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_176 /* Curry.framework in Frameworks */,
-				OBJ_177 /* Commandant.framework in Frameworks */,
-				OBJ_178 /* DonutKit.framework in Frameworks */,
-				OBJ_179 /* ReactiveTask.framework in Frameworks */,
-				OBJ_180 /* ReactiveSwift.framework in Frameworks */,
-				OBJ_181 /* Result.framework in Frameworks */,
+				OBJ_368 /* Curry.framework in Frameworks */,
+				OBJ_369 /* Commandant.framework in Frameworks */,
+				OBJ_370 /* DonutKit.framework in Frameworks */,
+				OBJ_371 /* ProgressSpinnerKit.framework in Frameworks */,
+				OBJ_372 /* Utility.framework in Frameworks */,
+				OBJ_373 /* Basic.framework in Frameworks */,
+				OBJ_374 /* POSIX.framework in Frameworks */,
+				OBJ_375 /* SPMLibc.framework in Frameworks */,
+				OBJ_376 /* clibc.framework in Frameworks */,
+				OBJ_377 /* ReactiveTask.framework in Frameworks */,
+				OBJ_378 /* ReactiveSwift.framework in Frameworks */,
+				OBJ_379 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_214 /* Frameworks */ = {
+		OBJ_408 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_215 /* Result.framework in Frameworks */,
+				OBJ_409 /* SPMLibc.framework in Frameworks */,
+				OBJ_410 /* clibc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_230 /* Frameworks */ = {
+		OBJ_419 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_231 /* ReactiveSwift.framework in Frameworks */,
-				OBJ_232 /* Result.framework in Frameworks */,
+				OBJ_420 /* Utility.framework in Frameworks */,
+				OBJ_421 /* Basic.framework in Frameworks */,
+				OBJ_422 /* POSIX.framework in Frameworks */,
+				OBJ_423 /* SPMLibc.framework in Frameworks */,
+				OBJ_424 /* clibc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_247 /* Frameworks */ = {
+		OBJ_461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_462 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_477 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_478 /* ReactiveSwift.framework in Frameworks */,
+				OBJ_479 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_496 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_94 /* Frameworks */ = {
+		OBJ_508 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_95 /* Result.framework in Frameworks */,
+				OBJ_509 /* clibc.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_541 /* Basic.framework in Frameworks */,
+				OBJ_542 /* POSIX.framework in Frameworks */,
+				OBJ_543 /* SPMLibc.framework in Frameworks */,
+				OBJ_544 /* clibc.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		OBJ_117 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Commands;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/Commands";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_118 /* Xcodeproj */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Xcodeproj;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/Xcodeproj";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_119 /* Workspace */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Workspace;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/Workspace";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_120 /* clibc */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_121 /* libc.c */,
+				OBJ_122 /* include */,
+			);
+			name = clibc;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_122 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_123 /* clibc.h */,
+				OBJ_124 /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		OBJ_125 /* TestSupportExecutable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TestSupportExecutable;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/TestSupportExecutable";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_126 /* swift-package */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "swift-package";
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/swift-package";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_128 /* Curry 4.0.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_129 /* Package.swift */,
+				OBJ_130 /* Curry.swift */,
+			);
+			name = "Curry 4.0.1";
+			path = ".build/checkouts/Curry.git-7507656763410610606/Source";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_131 /* Commandant 0.15.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_132 /* Commandant */,
+				OBJ_142 /* Package.swift */,
+			);
+			name = "Commandant 0.15.0";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_132 /* Commandant */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_133 /* Argument.swift */,
+				OBJ_134 /* ArgumentParser.swift */,
+				OBJ_135 /* ArgumentProtocol.swift */,
+				OBJ_136 /* Command.swift */,
+				OBJ_137 /* Errors.swift */,
+				OBJ_138 /* HelpCommand.swift */,
+				OBJ_139 /* Option.swift */,
+				OBJ_140 /* OrderedSet.swift */,
+				OBJ_141 /* Switch.swift */,
+			);
+			name = Commandant;
+			path = ".build/checkouts/Commandant.git-3062511658102057207/Sources/Commandant";
+			sourceTree = SOURCE_ROOT;
+		};
 		OBJ_14 /* Donut */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_15 /* Commands */,
-				OBJ_19 /* main.swift */,
+				OBJ_20 /* main.swift */,
 			);
 			name = Donut;
 			path = Sources/Donut;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_143 /* ReactiveTask 0.15.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_144 /* Package.swift */,
+				OBJ_145 /* Availability.swift */,
+				OBJ_146 /* Errors.swift */,
+				OBJ_147 /* Task.swift */,
+			);
+			name = "ReactiveTask 0.15.0";
+			path = ".build/checkouts/ReactiveTask.git--7769101310086521155/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_148 /* ReactiveSwift 4.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_149 /* Package.swift */,
+				OBJ_150 /* Action.swift */,
+				OBJ_151 /* Atomic.swift */,
+				OBJ_152 /* Bag.swift */,
+				OBJ_153 /* Deprecations+Removals.swift */,
+				OBJ_154 /* Disposable.swift */,
+				OBJ_155 /* Event.swift */,
+				OBJ_156 /* EventLogger.swift */,
+				OBJ_157 /* Flatten.swift */,
+				OBJ_158 /* FoundationExtensions.swift */,
+				OBJ_159 /* Lifetime.swift */,
+				OBJ_160 /* Observer.swift */,
+				OBJ_161 /* Optional.swift */,
+				OBJ_162 /* Property.swift */,
+				OBJ_163 /* Reactive.swift */,
+				OBJ_164 /* ResultExtensions.swift */,
+				OBJ_165 /* Scheduler.swift */,
+				OBJ_166 /* Signal.swift */,
+				OBJ_167 /* SignalProducer.swift */,
+				OBJ_168 /* UnidirectionalBinding.swift */,
+				OBJ_169 /* UninhabitedTypeGuards.swift */,
+				OBJ_170 /* ValidatingProperty.swift */,
+			);
+			name = "ReactiveSwift 4.0.0";
+			path = ".build/checkouts/ReactiveSwift.git-5417491714505190452/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_15 /* Commands */ = {
@@ -421,108 +1057,274 @@
 			children = (
 				OBJ_16 /* InstallCommand.swift */,
 				OBJ_17 /* ListCommand.swift */,
-				OBJ_18 /* VersionCommand.swift */,
-				E706DA7A20CE721000504C67 /* RemoveCommand.swift */,
+				OBJ_18 /* RemoveCommand.swift */,
+				OBJ_19 /* VersionCommand.swift */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
 		};
-		OBJ_20 /* Tests */ = {
+		OBJ_171 /* Result 4.0.0 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_21 /* TemplateDirectoryTests.swift */,
+				OBJ_172 /* Result */,
+				OBJ_177 /* Package.swift */,
+			);
+			name = "Result 4.0.0";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_172 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_173 /* AnyError.swift */,
+				OBJ_174 /* NoError.swift */,
+				OBJ_175 /* Result.swift */,
+				OBJ_176 /* ResultProtocol.swift */,
+			);
+			name = Result;
+			path = ".build/checkouts/Result.git-8684547452332391156/Result";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_178 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Donut::DonutKit::Product" /* DonutKit.framework */,
+				"SwiftPM::Basic::Product" /* Basic.framework */,
+				"ReactiveSwift::ReactiveSwift::Product" /* ReactiveSwift.framework */,
+				"ReactiveTask::ReactiveTask::Product" /* ReactiveTask.framework */,
+				"Donut::Donut::Product" /* Donut */,
+				"Result::Result::Product" /* Result.framework */,
+				"Curry::Curry::Product" /* Curry.framework */,
+				"Commandant::Commandant::Product" /* Commandant.framework */,
+				"SwiftPM::POSIX::Product" /* POSIX.framework */,
+				"ProgressSpinnerKit::ProgressSpinnerKit::Product" /* ProgressSpinnerKit.framework */,
+				"SwiftPM::SPMLibc::Product" /* SPMLibc.framework */,
+				"SwiftPM::Utility::Product" /* Utility.framework */,
+				"Donut::DonutTests::Product" /* DonutTests.xctest */,
+				"SwiftPM::clibc::Product" /* clibc.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_21 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_22 /* TemplateDirectoryTests.swift */,
 			);
 			path = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_22 /* Dependencies */ = {
+		OBJ_25 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_23 /* Curry 4.0.1 */,
-				OBJ_26 /* Commandant 0.13.0 */,
-				OBJ_38 /* ReactiveTask 0.14.0 */,
-				OBJ_43 /* ReactiveSwift 3.1.0 */,
-				OBJ_66 /* Result 3.2.4 */,
+				OBJ_26 /* ProgressSpinnerKit 0.1.0 */,
+				OBJ_32 /* SwiftPM 0.2.1 */,
+				OBJ_128 /* Curry 4.0.1 */,
+				OBJ_131 /* Commandant 0.15.0 */,
+				OBJ_143 /* ReactiveTask 0.15.0 */,
+				OBJ_148 /* ReactiveSwift 4.0.0 */,
+				OBJ_171 /* Result 4.0.0 */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		OBJ_23 /* Curry 4.0.1 */ = {
+		OBJ_26 /* ProgressSpinnerKit 0.1.0 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_24 /* Package.swift */,
-				OBJ_25 /* Curry.swift */,
+				OBJ_27 /* ProgressSpinnerKit */,
+				OBJ_30 /* Demo */,
+				OBJ_31 /* Package.swift */,
 			);
-			name = "Curry 4.0.1";
-			path = ".build/checkouts/Curry.git-7507656763410610606/Source";
+			name = "ProgressSpinnerKit 0.1.0";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_26 /* Commandant 0.13.0 */ = {
+		OBJ_27 /* ProgressSpinnerKit */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_27 /* Commandant */,
-				OBJ_37 /* Package.swift */,
+				OBJ_28 /* ProgressSpinner.swift */,
+				OBJ_29 /* Spinner.swift */,
 			);
-			name = "Commandant 0.13.0";
+			name = ProgressSpinnerKit;
+			path = ".build/checkouts/ProgressSpinnerKit--9173164363525898912/Sources/ProgressSpinnerKit";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_27 /* Commandant */ = {
+		OBJ_30 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_28 /* Argument.swift */,
-				OBJ_29 /* ArgumentParser.swift */,
-				OBJ_30 /* ArgumentProtocol.swift */,
-				OBJ_31 /* Command.swift */,
-				OBJ_32 /* Errors.swift */,
-				OBJ_33 /* HelpCommand.swift */,
-				OBJ_34 /* Option.swift */,
-				OBJ_35 /* OrderedSet.swift */,
-				OBJ_36 /* Switch.swift */,
 			);
-			name = Commandant;
-			path = ".build/checkouts/Commandant.git-3062511658102057207/Sources/Commandant";
+			name = Demo;
+			path = ".build/checkouts/ProgressSpinnerKit--9173164363525898912/Sources/Demo";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_38 /* ReactiveTask 0.14.0 */ = {
+		OBJ_32 /* SwiftPM 0.2.1 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_39 /* Package.swift */,
-				OBJ_40 /* Availability.swift */,
-				OBJ_41 /* Errors.swift */,
-				OBJ_42 /* Task.swift */,
+				OBJ_33 /* swift-build */,
+				OBJ_34 /* PackageModel */,
+				OBJ_35 /* TestSupport */,
+				OBJ_36 /* swiftpm-xctest-helper */,
+				OBJ_37 /* SPMLibc */,
+				OBJ_39 /* PackageDescription */,
+				OBJ_40 /* SourceControl */,
+				OBJ_41 /* swift-run */,
+				OBJ_42 /* PackageLoading */,
+				OBJ_43 /* PackageGraph */,
+				OBJ_44 /* swift-test */,
+				OBJ_45 /* Build */,
+				OBJ_46 /* Basic */,
+				OBJ_84 /* PackageDescription4 */,
+				OBJ_85 /* POSIX */,
+				OBJ_97 /* Utility */,
+				OBJ_117 /* Commands */,
+				OBJ_118 /* Xcodeproj */,
+				OBJ_119 /* Workspace */,
+				OBJ_120 /* clibc */,
+				OBJ_125 /* TestSupportExecutable */,
+				OBJ_126 /* swift-package */,
+				OBJ_127 /* Package.swift */,
 			);
-			name = "ReactiveTask 0.14.0";
-			path = ".build/checkouts/ReactiveTask.git--7769101310086521155/Sources";
+			name = "SwiftPM 0.2.1";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_43 /* ReactiveSwift 3.1.0 */ = {
+		OBJ_33 /* swift-build */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_44 /* Package.swift */,
-				OBJ_45 /* Action.swift */,
-				OBJ_46 /* Atomic.swift */,
-				OBJ_47 /* Bag.swift */,
-				OBJ_48 /* Deprecations+Removals.swift */,
-				OBJ_49 /* Disposable.swift */,
-				OBJ_50 /* Event.swift */,
-				OBJ_51 /* EventLogger.swift */,
-				OBJ_52 /* Flatten.swift */,
-				OBJ_53 /* FoundationExtensions.swift */,
-				OBJ_54 /* Lifetime.swift */,
-				OBJ_55 /* Observer.swift */,
-				OBJ_56 /* Optional.swift */,
-				OBJ_57 /* Property.swift */,
-				OBJ_58 /* Reactive.swift */,
-				OBJ_59 /* ResultExtensions.swift */,
-				OBJ_60 /* Scheduler.swift */,
-				OBJ_61 /* Signal.swift */,
-				OBJ_62 /* SignalProducer.swift */,
-				OBJ_63 /* UnidirectionalBinding.swift */,
-				OBJ_64 /* UninhabitedTypeGuards.swift */,
-				OBJ_65 /* ValidatingProperty.swift */,
 			);
-			name = "ReactiveSwift 3.1.0";
-			path = ".build/checkouts/ReactiveSwift.git-5417491714505190452/Sources";
+			name = "swift-build";
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/swift-build";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_34 /* PackageModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PackageModel;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/PackageModel";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_35 /* TestSupport */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TestSupport;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/TestSupport";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_36 /* swiftpm-xctest-helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "swiftpm-xctest-helper";
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/swiftpm-xctest-helper";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_37 /* SPMLibc */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_38 /* libc.swift */,
+			);
+			name = SPMLibc;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/SPMLibc";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_39 /* PackageDescription */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PackageDescription;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/PackageDescription";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_40 /* SourceControl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SourceControl;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/SourceControl";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_41 /* swift-run */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "swift-run";
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/swift-run";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_42 /* PackageLoading */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PackageLoading;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/PackageLoading";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_43 /* PackageGraph */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PackageGraph;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/PackageGraph";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_44 /* swift-test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "swift-test";
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/swift-test";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_45 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Build;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/Build";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_46 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_47 /* Await.swift */,
+				OBJ_48 /* ByteString.swift */,
+				OBJ_49 /* CStringArray.swift */,
+				OBJ_50 /* CacheableSequence.swift */,
+				OBJ_51 /* CollectionAlgorithms.swift */,
+				OBJ_52 /* CollectionExtensions.swift */,
+				OBJ_53 /* Condition.swift */,
+				OBJ_54 /* DeltaAlgorithm.swift */,
+				OBJ_55 /* DiagnosticsEngine.swift */,
+				OBJ_56 /* DictionaryExtensions.swift */,
+				OBJ_57 /* DictionaryLiteralExtensions.swift */,
+				OBJ_58 /* EditDistance.swift */,
+				OBJ_59 /* FileSystem.swift */,
+				OBJ_60 /* GraphAlgorithms.swift */,
+				OBJ_61 /* JSON.swift */,
+				OBJ_62 /* JSONMapper.swift */,
+				OBJ_63 /* KeyedPair.swift */,
+				OBJ_64 /* LazyCache.swift */,
+				OBJ_65 /* Lock.swift */,
+				OBJ_66 /* ObjectIdentifierProtocol.swift */,
+				OBJ_67 /* OrderedSet.swift */,
+				OBJ_68 /* OutputByteStream.swift */,
+				OBJ_69 /* Path.swift */,
+				OBJ_70 /* PathShims.swift */,
+				OBJ_71 /* Process.swift */,
+				OBJ_72 /* ProcessSet.swift */,
+				OBJ_73 /* RegEx.swift */,
+				OBJ_74 /* Result.swift */,
+				OBJ_75 /* SHA256.swift */,
+				OBJ_76 /* SortedArray.swift */,
+				OBJ_77 /* StringConversions.swift */,
+				OBJ_78 /* SynchronizedQueue.swift */,
+				OBJ_79 /* TemporaryFile.swift */,
+				OBJ_80 /* TerminalController.swift */,
+				OBJ_81 /* Thread.swift */,
+				OBJ_82 /* Tuple.swift */,
+				OBJ_83 /* misc.swift */,
+			);
+			name = Basic;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/Basic";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_5 = {
@@ -530,30 +1332,13 @@
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_20 /* Tests */,
-				OBJ_22 /* Dependencies */,
-				OBJ_71 /* Products */,
+				OBJ_21 /* Tests */,
+				OBJ_23 /* Resources */,
+				OBJ_24 /* Donut.xctemplate */,
+				OBJ_25 /* Dependencies */,
+				OBJ_178 /* Products */,
 			);
 			sourceTree = "<group>";
-		};
-		OBJ_66 /* Result 3.2.4 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_67 /* Result */,
-				OBJ_70 /* Package.swift */,
-			);
-			name = "Result 3.2.4";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_67 /* Result */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_68 /* Result.swift */,
-				OBJ_69 /* ResultProtocol.swift */,
-			);
-			name = Result;
-			path = ".build/checkouts/Result.git-8684547452332391156/Result";
-			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
@@ -563,21 +1348,6 @@
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_71 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"ReactiveSwift::ReactiveSwift::Product" /* ReactiveSwift.framework */,
-				"ReactiveTask::ReactiveTask::Product" /* ReactiveTask.framework */,
-				"Donut::DonutKit::Product" /* DonutKit.framework */,
-				"Result::Result::Product" /* Result.framework */,
-				"Commandant::Commandant::Product" /* Commandant.framework */,
-				"Curry::Curry::Product" /* Curry.framework */,
-				"Donut::Donut::Product" /* Donut */,
-				"Donut::DonutTests::Product" /* DonutTests.xctest */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		OBJ_8 /* DonutKit */ = {
 			isa = PBXGroup;
@@ -592,20 +1362,74 @@
 			path = Sources/DonutKit;
 			sourceTree = SOURCE_ROOT;
 		};
+		OBJ_84 /* PackageDescription4 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PackageDescription4;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/PackageDescription4";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_85 /* POSIX */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_86 /* Error.swift */,
+				OBJ_87 /* chdir.swift */,
+				OBJ_88 /* env.swift */,
+				OBJ_89 /* exit.swift */,
+				OBJ_90 /* getcwd.swift */,
+				OBJ_91 /* isatty.swift */,
+				OBJ_92 /* readdir.swift */,
+				OBJ_93 /* realpath.swift */,
+				OBJ_94 /* rename.swift */,
+				OBJ_95 /* stat.swift */,
+				OBJ_96 /* usleep.swift */,
+			);
+			name = POSIX;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/POSIX";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_97 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_98 /* ArgumentParser.swift */,
+				OBJ_99 /* ArgumentParserShellCompletion.swift */,
+				OBJ_100 /* BuildFlags.swift */,
+				OBJ_101 /* CollectionExtensions.swift */,
+				OBJ_102 /* Diagnostics.swift */,
+				OBJ_103 /* Git.swift */,
+				OBJ_104 /* InterruptHandler.swift */,
+				OBJ_105 /* PkgConfig.swift */,
+				OBJ_106 /* Platform.swift */,
+				OBJ_107 /* Process.swift */,
+				OBJ_108 /* ProgressBar.swift */,
+				OBJ_109 /* SimplePersistence.swift */,
+				OBJ_110 /* StringExtensions.swift */,
+				OBJ_111 /* StringMangling.swift */,
+				OBJ_112 /* URL.swift */,
+				OBJ_113 /* Verbosity.swift */,
+				OBJ_114 /* Version.swift */,
+				OBJ_115 /* Versioning.swift */,
+				OBJ_116 /* misc.swift */,
+			);
+			name = Utility;
+			path = ".build/checkouts/swift-package-manager.git-5579847846518334428/Sources/Utility";
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		"Commandant::Commandant" /* Commandant */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_81 /* Build configuration list for PBXNativeTarget "Commandant" */;
+			buildConfigurationList = OBJ_246 /* Build configuration list for PBXNativeTarget "Commandant" */;
 			buildPhases = (
-				OBJ_84 /* Sources */,
-				OBJ_94 /* Frameworks */,
+				OBJ_249 /* Sources */,
+				OBJ_259 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_96 /* PBXTargetDependency */,
+				OBJ_261 /* PBXTargetDependency */,
 			);
 			name = Commandant;
 			productName = Commandant;
@@ -614,9 +1438,9 @@
 		};
 		"Commandant::SwiftPMPackageDescription" /* CommandantPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_99 /* Build configuration list for PBXNativeTarget "CommandantPackageDescription" */;
+			buildConfigurationList = OBJ_264 /* Build configuration list for PBXNativeTarget "CommandantPackageDescription" */;
 			buildPhases = (
-				OBJ_102 /* Sources */,
+				OBJ_267 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -628,10 +1452,10 @@
 		};
 		"Curry::Curry" /* Curry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_105 /* Build configuration list for PBXNativeTarget "Curry" */;
+			buildConfigurationList = OBJ_270 /* Build configuration list for PBXNativeTarget "Curry" */;
 			buildPhases = (
-				OBJ_108 /* Sources */,
-				OBJ_110 /* Frameworks */,
+				OBJ_273 /* Sources */,
+				OBJ_275 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -644,9 +1468,9 @@
 		};
 		"Curry::SwiftPMPackageDescription" /* CurryPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_112 /* Build configuration list for PBXNativeTarget "CurryPackageDescription" */;
+			buildConfigurationList = OBJ_277 /* Build configuration list for PBXNativeTarget "CurryPackageDescription" */;
 			buildPhases = (
-				OBJ_115 /* Sources */,
+				OBJ_280 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -658,20 +1482,26 @@
 		};
 		"Donut::Donut" /* Donut */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_118 /* Build configuration list for PBXNativeTarget "Donut" */;
+			buildConfigurationList = OBJ_283 /* Build configuration list for PBXNativeTarget "Donut" */;
 			buildPhases = (
-				OBJ_121 /* Sources */,
-				OBJ_126 /* Frameworks */,
+				OBJ_286 /* Sources */,
+				OBJ_292 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_133 /* PBXTargetDependency */,
-				OBJ_134 /* PBXTargetDependency */,
-				OBJ_135 /* PBXTargetDependency */,
-				OBJ_137 /* PBXTargetDependency */,
-				OBJ_139 /* PBXTargetDependency */,
-				OBJ_141 /* PBXTargetDependency */,
+				OBJ_305 /* PBXTargetDependency */,
+				OBJ_306 /* PBXTargetDependency */,
+				OBJ_307 /* PBXTargetDependency */,
+				OBJ_309 /* PBXTargetDependency */,
+				OBJ_311 /* PBXTargetDependency */,
+				OBJ_313 /* PBXTargetDependency */,
+				OBJ_314 /* PBXTargetDependency */,
+				OBJ_315 /* PBXTargetDependency */,
+				OBJ_316 /* PBXTargetDependency */,
+				OBJ_317 /* PBXTargetDependency */,
+				OBJ_319 /* PBXTargetDependency */,
+				OBJ_321 /* PBXTargetDependency */,
 			);
 			name = Donut;
 			productName = Donut;
@@ -680,17 +1510,23 @@
 		};
 		"Donut::DonutKit" /* DonutKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_142 /* Build configuration list for PBXNativeTarget "DonutKit" */;
+			buildConfigurationList = OBJ_322 /* Build configuration list for PBXNativeTarget "DonutKit" */;
 			buildPhases = (
-				OBJ_145 /* Sources */,
-				OBJ_151 /* Frameworks */,
+				OBJ_325 /* Sources */,
+				OBJ_331 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_155 /* PBXTargetDependency */,
-				OBJ_156 /* PBXTargetDependency */,
-				OBJ_157 /* PBXTargetDependency */,
+				OBJ_341 /* PBXTargetDependency */,
+				OBJ_342 /* PBXTargetDependency */,
+				OBJ_343 /* PBXTargetDependency */,
+				OBJ_344 /* PBXTargetDependency */,
+				OBJ_345 /* PBXTargetDependency */,
+				OBJ_346 /* PBXTargetDependency */,
+				OBJ_347 /* PBXTargetDependency */,
+				OBJ_348 /* PBXTargetDependency */,
+				OBJ_349 /* PBXTargetDependency */,
 			);
 			name = DonutKit;
 			productName = DonutKit;
@@ -699,21 +1535,27 @@
 		};
 		"Donut::DonutTests" /* DonutTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_170 /* Build configuration list for PBXNativeTarget "DonutTests" */;
+			buildConfigurationList = OBJ_362 /* Build configuration list for PBXNativeTarget "DonutTests" */;
 			buildPhases = (
-				OBJ_173 /* Sources */,
-				OBJ_175 /* Frameworks */,
+				OBJ_365 /* Sources */,
+				OBJ_367 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_182 /* PBXTargetDependency */,
-				OBJ_183 /* PBXTargetDependency */,
-				OBJ_184 /* PBXTargetDependency */,
-				OBJ_185 /* PBXTargetDependency */,
-				OBJ_186 /* PBXTargetDependency */,
-				OBJ_187 /* PBXTargetDependency */,
-				OBJ_188 /* PBXTargetDependency */,
+				OBJ_380 /* PBXTargetDependency */,
+				OBJ_381 /* PBXTargetDependency */,
+				OBJ_382 /* PBXTargetDependency */,
+				OBJ_383 /* PBXTargetDependency */,
+				OBJ_384 /* PBXTargetDependency */,
+				OBJ_385 /* PBXTargetDependency */,
+				OBJ_386 /* PBXTargetDependency */,
+				OBJ_387 /* PBXTargetDependency */,
+				OBJ_388 /* PBXTargetDependency */,
+				OBJ_389 /* PBXTargetDependency */,
+				OBJ_390 /* PBXTargetDependency */,
+				OBJ_391 /* PBXTargetDependency */,
+				OBJ_392 /* PBXTargetDependency */,
 			);
 			name = DonutTests;
 			productName = DonutTests;
@@ -722,9 +1564,9 @@
 		};
 		"Donut::SwiftPMPackageDescription" /* DonutPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_159 /* Build configuration list for PBXNativeTarget "DonutPackageDescription" */;
+			buildConfigurationList = OBJ_351 /* Build configuration list for PBXNativeTarget "DonutPackageDescription" */;
 			buildPhases = (
-				OBJ_162 /* Sources */,
+				OBJ_354 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -734,17 +1576,52 @@
 			productName = DonutPackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
-		"ReactiveSwift::ReactiveSwift" /* ReactiveSwift */ = {
+		"ProgressSpinnerKit::ProgressSpinnerKit" /* ProgressSpinnerKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_189 /* Build configuration list for PBXNativeTarget "ReactiveSwift" */;
+			buildConfigurationList = OBJ_413 /* Build configuration list for PBXNativeTarget "ProgressSpinnerKit" */;
 			buildPhases = (
-				OBJ_192 /* Sources */,
-				OBJ_214 /* Frameworks */,
+				OBJ_416 /* Sources */,
+				OBJ_419 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_216 /* PBXTargetDependency */,
+				OBJ_425 /* PBXTargetDependency */,
+				OBJ_426 /* PBXTargetDependency */,
+				OBJ_427 /* PBXTargetDependency */,
+				OBJ_428 /* PBXTargetDependency */,
+				OBJ_429 /* PBXTargetDependency */,
+			);
+			name = ProgressSpinnerKit;
+			productName = ProgressSpinnerKit;
+			productReference = "ProgressSpinnerKit::ProgressSpinnerKit::Product" /* ProgressSpinnerKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"ProgressSpinnerKit::SwiftPMPackageDescription" /* ProgressSpinnerKitPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_431 /* Build configuration list for PBXNativeTarget "ProgressSpinnerKitPackageDescription" */;
+			buildPhases = (
+				OBJ_434 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProgressSpinnerKitPackageDescription;
+			productName = ProgressSpinnerKitPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"ReactiveSwift::ReactiveSwift" /* ReactiveSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_436 /* Build configuration list for PBXNativeTarget "ReactiveSwift" */;
+			buildPhases = (
+				OBJ_439 /* Sources */,
+				OBJ_461 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_463 /* PBXTargetDependency */,
 			);
 			name = ReactiveSwift;
 			productName = ReactiveSwift;
@@ -753,9 +1630,9 @@
 		};
 		"ReactiveSwift::SwiftPMPackageDescription" /* ReactiveSwiftPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_218 /* Build configuration list for PBXNativeTarget "ReactiveSwiftPackageDescription" */;
+			buildConfigurationList = OBJ_465 /* Build configuration list for PBXNativeTarget "ReactiveSwiftPackageDescription" */;
 			buildPhases = (
-				OBJ_221 /* Sources */,
+				OBJ_468 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -767,16 +1644,16 @@
 		};
 		"ReactiveTask::ReactiveTask" /* ReactiveTask */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_223 /* Build configuration list for PBXNativeTarget "ReactiveTask" */;
+			buildConfigurationList = OBJ_470 /* Build configuration list for PBXNativeTarget "ReactiveTask" */;
 			buildPhases = (
-				OBJ_226 /* Sources */,
-				OBJ_230 /* Frameworks */,
+				OBJ_473 /* Sources */,
+				OBJ_477 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_233 /* PBXTargetDependency */,
-				OBJ_234 /* PBXTargetDependency */,
+				OBJ_480 /* PBXTargetDependency */,
+				OBJ_481 /* PBXTargetDependency */,
 			);
 			name = ReactiveTask;
 			productName = ReactiveTask;
@@ -785,9 +1662,9 @@
 		};
 		"ReactiveTask::SwiftPMPackageDescription" /* ReactiveTaskPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_236 /* Build configuration list for PBXNativeTarget "ReactiveTaskPackageDescription" */;
+			buildConfigurationList = OBJ_483 /* Build configuration list for PBXNativeTarget "ReactiveTaskPackageDescription" */;
 			buildPhases = (
-				OBJ_239 /* Sources */,
+				OBJ_486 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -799,10 +1676,10 @@
 		};
 		"Result::Result" /* Result */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_241 /* Build configuration list for PBXNativeTarget "Result" */;
+			buildConfigurationList = OBJ_488 /* Build configuration list for PBXNativeTarget "Result" */;
 			buildPhases = (
-				OBJ_244 /* Sources */,
-				OBJ_247 /* Frameworks */,
+				OBJ_491 /* Sources */,
+				OBJ_496 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -815,9 +1692,9 @@
 		};
 		"Result::SwiftPMPackageDescription" /* ResultPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_249 /* Build configuration list for PBXNativeTarget "ResultPackageDescription" */;
+			buildConfigurationList = OBJ_498 /* Build configuration list for PBXNativeTarget "ResultPackageDescription" */;
 			buildPhases = (
-				OBJ_252 /* Sources */,
+				OBJ_501 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -825,6 +1702,110 @@
 			);
 			name = ResultPackageDescription;
 			productName = ResultPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftPM::Basic" /* Basic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_194 /* Build configuration list for PBXNativeTarget "Basic" */;
+			buildPhases = (
+				OBJ_197 /* Sources */,
+				OBJ_235 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_239 /* PBXTargetDependency */,
+				OBJ_241 /* PBXTargetDependency */,
+				OBJ_243 /* PBXTargetDependency */,
+			);
+			name = Basic;
+			productName = Basic;
+			productReference = "SwiftPM::Basic::Product" /* Basic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftPM::POSIX" /* POSIX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_393 /* Build configuration list for PBXNativeTarget "POSIX" */;
+			buildPhases = (
+				OBJ_396 /* Sources */,
+				OBJ_408 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_411 /* PBXTargetDependency */,
+				OBJ_412 /* PBXTargetDependency */,
+			);
+			name = POSIX;
+			productName = POSIX;
+			productReference = "SwiftPM::POSIX::Product" /* POSIX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftPM::SPMLibc" /* SPMLibc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_503 /* Build configuration list for PBXNativeTarget "SPMLibc" */;
+			buildPhases = (
+				OBJ_506 /* Sources */,
+				OBJ_508 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_510 /* PBXTargetDependency */,
+			);
+			name = SPMLibc;
+			productName = SPMLibc;
+			productReference = "SwiftPM::SPMLibc::Product" /* SPMLibc.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftPM::SwiftPMPackageDescription" /* SwiftPMPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_512 /* Build configuration list for PBXNativeTarget "SwiftPMPackageDescription" */;
+			buildPhases = (
+				OBJ_515 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftPMPackageDescription;
+			productName = SwiftPMPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftPM::Utility" /* Utility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_517 /* Build configuration list for PBXNativeTarget "Utility" */;
+			buildPhases = (
+				OBJ_520 /* Sources */,
+				OBJ_540 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_545 /* PBXTargetDependency */,
+				OBJ_546 /* PBXTargetDependency */,
+				OBJ_547 /* PBXTargetDependency */,
+				OBJ_548 /* PBXTargetDependency */,
+			);
+			name = Utility;
+			productName = Utility;
+			productReference = "SwiftPM::Utility::Product" /* Utility.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftPM::clibc" /* clibc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_549 /* Build configuration list for PBXNativeTarget "clibc" */;
+			buildPhases = (
+				OBJ_552 /* Sources */,
+				OBJ_554 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = clibc;
+			productName = clibc;
+			productReference = "SwiftPM::clibc::Product" /* clibc.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -843,10 +1824,11 @@
 				en,
 			);
 			mainGroup = OBJ_5;
-			productRefGroup = OBJ_71 /* Products */;
+			productRefGroup = OBJ_178 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				"SwiftPM::Basic" /* Basic */,
 				"Commandant::Commandant" /* Commandant */,
 				"Commandant::SwiftPMPackageDescription" /* CommandantPackageDescription */,
 				"Curry::Curry" /* Curry */,
@@ -856,286 +1838,687 @@
 				"Donut::SwiftPMPackageDescription" /* DonutPackageDescription */,
 				"Donut::DonutPackageTests::ProductTarget" /* DonutPackageTests */,
 				"Donut::DonutTests" /* DonutTests */,
+				"SwiftPM::POSIX" /* POSIX */,
+				"ProgressSpinnerKit::ProgressSpinnerKit" /* ProgressSpinnerKit */,
+				"ProgressSpinnerKit::SwiftPMPackageDescription" /* ProgressSpinnerKitPackageDescription */,
 				"ReactiveSwift::ReactiveSwift" /* ReactiveSwift */,
 				"ReactiveSwift::SwiftPMPackageDescription" /* ReactiveSwiftPackageDescription */,
 				"ReactiveTask::ReactiveTask" /* ReactiveTask */,
 				"ReactiveTask::SwiftPMPackageDescription" /* ReactiveTaskPackageDescription */,
 				"Result::Result" /* Result */,
 				"Result::SwiftPMPackageDescription" /* ResultPackageDescription */,
+				"SwiftPM::SPMLibc" /* SPMLibc */,
+				"SwiftPM::SwiftPMPackageDescription" /* SwiftPMPackageDescription */,
+				"SwiftPM::Utility" /* Utility */,
+				"SwiftPM::clibc" /* clibc */,
 				"Donut::donut::ProductTarget" /* donut */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_102 /* Sources */ = {
+		OBJ_197 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_103 /* Package.swift in Sources */,
+				OBJ_198 /* Await.swift in Sources */,
+				OBJ_199 /* ByteString.swift in Sources */,
+				OBJ_200 /* CStringArray.swift in Sources */,
+				OBJ_201 /* CacheableSequence.swift in Sources */,
+				OBJ_202 /* CollectionAlgorithms.swift in Sources */,
+				OBJ_203 /* CollectionExtensions.swift in Sources */,
+				OBJ_204 /* Condition.swift in Sources */,
+				OBJ_205 /* DeltaAlgorithm.swift in Sources */,
+				OBJ_206 /* DiagnosticsEngine.swift in Sources */,
+				OBJ_207 /* DictionaryExtensions.swift in Sources */,
+				OBJ_208 /* DictionaryLiteralExtensions.swift in Sources */,
+				OBJ_209 /* EditDistance.swift in Sources */,
+				OBJ_210 /* FileSystem.swift in Sources */,
+				OBJ_211 /* GraphAlgorithms.swift in Sources */,
+				OBJ_212 /* JSON.swift in Sources */,
+				OBJ_213 /* JSONMapper.swift in Sources */,
+				OBJ_214 /* KeyedPair.swift in Sources */,
+				OBJ_215 /* LazyCache.swift in Sources */,
+				OBJ_216 /* Lock.swift in Sources */,
+				OBJ_217 /* ObjectIdentifierProtocol.swift in Sources */,
+				OBJ_218 /* OrderedSet.swift in Sources */,
+				OBJ_219 /* OutputByteStream.swift in Sources */,
+				OBJ_220 /* Path.swift in Sources */,
+				OBJ_221 /* PathShims.swift in Sources */,
+				OBJ_222 /* Process.swift in Sources */,
+				OBJ_223 /* ProcessSet.swift in Sources */,
+				OBJ_224 /* RegEx.swift in Sources */,
+				OBJ_225 /* Result.swift in Sources */,
+				OBJ_226 /* SHA256.swift in Sources */,
+				OBJ_227 /* SortedArray.swift in Sources */,
+				OBJ_228 /* StringConversions.swift in Sources */,
+				OBJ_229 /* SynchronizedQueue.swift in Sources */,
+				OBJ_230 /* TemporaryFile.swift in Sources */,
+				OBJ_231 /* TerminalController.swift in Sources */,
+				OBJ_232 /* Thread.swift in Sources */,
+				OBJ_233 /* Tuple.swift in Sources */,
+				OBJ_234 /* misc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_108 /* Sources */ = {
+		OBJ_249 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_109 /* Curry.swift in Sources */,
+				OBJ_250 /* Argument.swift in Sources */,
+				OBJ_251 /* ArgumentParser.swift in Sources */,
+				OBJ_252 /* ArgumentProtocol.swift in Sources */,
+				OBJ_253 /* Command.swift in Sources */,
+				OBJ_254 /* Errors.swift in Sources */,
+				OBJ_255 /* HelpCommand.swift in Sources */,
+				OBJ_256 /* Option.swift in Sources */,
+				OBJ_257 /* OrderedSet.swift in Sources */,
+				OBJ_258 /* Switch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_115 /* Sources */ = {
+		OBJ_267 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_116 /* Package.swift in Sources */,
+				OBJ_268 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_121 /* Sources */ = {
+		OBJ_273 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_122 /* InstallCommand.swift in Sources */,
-				OBJ_123 /* ListCommand.swift in Sources */,
-				E706DA7C20CE724D00504C67 /* RemoveCommand.swift in Sources */,
-				OBJ_124 /* VersionCommand.swift in Sources */,
-				OBJ_125 /* main.swift in Sources */,
+				OBJ_274 /* Curry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_145 /* Sources */ = {
+		OBJ_280 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_146 /* DonutErrors.swift in Sources */,
-				OBJ_147 /* Git.swift in Sources */,
-				OBJ_148 /* SemanticVersion.swift in Sources */,
-				OBJ_149 /* Template.swift in Sources */,
-				OBJ_150 /* TemplateDirectory.swift in Sources */,
+				OBJ_281 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_162 /* Sources */ = {
+		OBJ_286 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_163 /* Package.swift in Sources */,
+				OBJ_287 /* InstallCommand.swift in Sources */,
+				OBJ_288 /* ListCommand.swift in Sources */,
+				OBJ_289 /* RemoveCommand.swift in Sources */,
+				OBJ_290 /* VersionCommand.swift in Sources */,
+				OBJ_291 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_173 /* Sources */ = {
+		OBJ_325 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_174 /* TemplateDirectoryTests.swift in Sources */,
+				OBJ_326 /* DonutErrors.swift in Sources */,
+				OBJ_327 /* Git.swift in Sources */,
+				OBJ_328 /* SemanticVersion.swift in Sources */,
+				OBJ_329 /* Template.swift in Sources */,
+				OBJ_330 /* TemplateDirectory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_192 /* Sources */ = {
+		OBJ_354 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_193 /* Action.swift in Sources */,
-				OBJ_194 /* Atomic.swift in Sources */,
-				OBJ_195 /* Bag.swift in Sources */,
-				OBJ_196 /* Deprecations+Removals.swift in Sources */,
-				OBJ_197 /* Disposable.swift in Sources */,
-				OBJ_198 /* Event.swift in Sources */,
-				OBJ_199 /* EventLogger.swift in Sources */,
-				OBJ_200 /* Flatten.swift in Sources */,
-				OBJ_201 /* FoundationExtensions.swift in Sources */,
-				OBJ_202 /* Lifetime.swift in Sources */,
-				OBJ_203 /* Observer.swift in Sources */,
-				OBJ_204 /* Optional.swift in Sources */,
-				OBJ_205 /* Property.swift in Sources */,
-				OBJ_206 /* Reactive.swift in Sources */,
-				OBJ_207 /* ResultExtensions.swift in Sources */,
-				OBJ_208 /* Scheduler.swift in Sources */,
-				OBJ_209 /* Signal.swift in Sources */,
-				OBJ_210 /* SignalProducer.swift in Sources */,
-				OBJ_211 /* UnidirectionalBinding.swift in Sources */,
-				OBJ_212 /* UninhabitedTypeGuards.swift in Sources */,
-				OBJ_213 /* ValidatingProperty.swift in Sources */,
+				OBJ_355 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_221 /* Sources */ = {
+		OBJ_365 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_222 /* Package.swift in Sources */,
+				OBJ_366 /* TemplateDirectoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_226 /* Sources */ = {
+		OBJ_396 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_227 /* Availability.swift in Sources */,
-				OBJ_228 /* Errors.swift in Sources */,
-				OBJ_229 /* Task.swift in Sources */,
+				OBJ_397 /* Error.swift in Sources */,
+				OBJ_398 /* chdir.swift in Sources */,
+				OBJ_399 /* env.swift in Sources */,
+				OBJ_400 /* exit.swift in Sources */,
+				OBJ_401 /* getcwd.swift in Sources */,
+				OBJ_402 /* isatty.swift in Sources */,
+				OBJ_403 /* readdir.swift in Sources */,
+				OBJ_404 /* realpath.swift in Sources */,
+				OBJ_405 /* rename.swift in Sources */,
+				OBJ_406 /* stat.swift in Sources */,
+				OBJ_407 /* usleep.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_239 /* Sources */ = {
+		OBJ_416 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_240 /* Package.swift in Sources */,
+				OBJ_417 /* ProgressSpinner.swift in Sources */,
+				OBJ_418 /* Spinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_244 /* Sources */ = {
+		OBJ_434 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_245 /* Result.swift in Sources */,
-				OBJ_246 /* ResultProtocol.swift in Sources */,
+				OBJ_435 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_252 /* Sources */ = {
+		OBJ_439 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_253 /* Package.swift in Sources */,
+				OBJ_440 /* Action.swift in Sources */,
+				OBJ_441 /* Atomic.swift in Sources */,
+				OBJ_442 /* Bag.swift in Sources */,
+				OBJ_443 /* Deprecations+Removals.swift in Sources */,
+				OBJ_444 /* Disposable.swift in Sources */,
+				OBJ_445 /* Event.swift in Sources */,
+				OBJ_446 /* EventLogger.swift in Sources */,
+				OBJ_447 /* Flatten.swift in Sources */,
+				OBJ_448 /* FoundationExtensions.swift in Sources */,
+				OBJ_449 /* Lifetime.swift in Sources */,
+				OBJ_450 /* Observer.swift in Sources */,
+				OBJ_451 /* Optional.swift in Sources */,
+				OBJ_452 /* Property.swift in Sources */,
+				OBJ_453 /* Reactive.swift in Sources */,
+				OBJ_454 /* ResultExtensions.swift in Sources */,
+				OBJ_455 /* Scheduler.swift in Sources */,
+				OBJ_456 /* Signal.swift in Sources */,
+				OBJ_457 /* SignalProducer.swift in Sources */,
+				OBJ_458 /* UnidirectionalBinding.swift in Sources */,
+				OBJ_459 /* UninhabitedTypeGuards.swift in Sources */,
+				OBJ_460 /* ValidatingProperty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_84 /* Sources */ = {
+		OBJ_468 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_85 /* Argument.swift in Sources */,
-				OBJ_86 /* ArgumentParser.swift in Sources */,
-				OBJ_87 /* ArgumentProtocol.swift in Sources */,
-				OBJ_88 /* Command.swift in Sources */,
-				OBJ_89 /* Errors.swift in Sources */,
-				OBJ_90 /* HelpCommand.swift in Sources */,
-				OBJ_91 /* Option.swift in Sources */,
-				OBJ_92 /* OrderedSet.swift in Sources */,
-				OBJ_93 /* Switch.swift in Sources */,
+				OBJ_469 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_474 /* Availability.swift in Sources */,
+				OBJ_475 /* Errors.swift in Sources */,
+				OBJ_476 /* Task.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_486 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_487 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_492 /* AnyError.swift in Sources */,
+				OBJ_493 /* NoError.swift in Sources */,
+				OBJ_494 /* Result.swift in Sources */,
+				OBJ_495 /* ResultProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_502 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_507 /* libc.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_515 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_516 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_520 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_521 /* ArgumentParser.swift in Sources */,
+				OBJ_522 /* ArgumentParserShellCompletion.swift in Sources */,
+				OBJ_523 /* BuildFlags.swift in Sources */,
+				OBJ_524 /* CollectionExtensions.swift in Sources */,
+				OBJ_525 /* Diagnostics.swift in Sources */,
+				OBJ_526 /* Git.swift in Sources */,
+				OBJ_527 /* InterruptHandler.swift in Sources */,
+				OBJ_528 /* PkgConfig.swift in Sources */,
+				OBJ_529 /* Platform.swift in Sources */,
+				OBJ_530 /* Process.swift in Sources */,
+				OBJ_531 /* ProgressBar.swift in Sources */,
+				OBJ_532 /* SimplePersistence.swift in Sources */,
+				OBJ_533 /* StringExtensions.swift in Sources */,
+				OBJ_534 /* StringMangling.swift in Sources */,
+				OBJ_535 /* URL.swift in Sources */,
+				OBJ_536 /* Verbosity.swift in Sources */,
+				OBJ_537 /* Version.swift in Sources */,
+				OBJ_538 /* Versioning.swift in Sources */,
+				OBJ_539 /* misc.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_553 /* libc.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_133 /* PBXTargetDependency */ = {
+		OBJ_239 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::POSIX" /* POSIX */;
+			targetProxy = E7C8BB00213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_241 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::SPMLibc" /* SPMLibc */;
+			targetProxy = E7C8BB04213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::clibc" /* clibc */;
+			targetProxy = E7C8BB05213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_261 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Result::Result" /* Result */;
+			targetProxy = E7C8BB1A213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_305 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Curry::Curry" /* Curry */;
-			targetProxy = E706DA6B20CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB18213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_134 /* PBXTargetDependency */ = {
+		OBJ_306 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Commandant::Commandant" /* Commandant */;
-			targetProxy = E706DA6C20CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB19213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_135 /* PBXTargetDependency */ = {
+		OBJ_307 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Donut::DonutKit" /* DonutKit */;
-			targetProxy = E706DA6D20CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB1B213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_137 /* PBXTargetDependency */ = {
+		OBJ_309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "ProgressSpinnerKit::ProgressSpinnerKit" /* ProgressSpinnerKit */;
+			targetProxy = E7C8BB1C213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::Utility" /* Utility */;
+			targetProxy = E7C8BB1D213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_313 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::Basic" /* Basic */;
+			targetProxy = E7C8BB1E213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_314 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::POSIX" /* POSIX */;
+			targetProxy = E7C8BB1F213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::SPMLibc" /* SPMLibc */;
+			targetProxy = E7C8BB20213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::clibc" /* clibc */;
+			targetProxy = E7C8BB21213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_317 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "ReactiveTask::ReactiveTask" /* ReactiveTask */;
-			targetProxy = E706DA6E20CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB22213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_139 /* PBXTargetDependency */ = {
+		OBJ_319 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "ReactiveSwift::ReactiveSwift" /* ReactiveSwift */;
-			targetProxy = E706DA6F20CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB23213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_141 /* PBXTargetDependency */ = {
+		OBJ_321 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Result::Result" /* Result */;
-			targetProxy = E706DA7020CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB24213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_155 /* PBXTargetDependency */ = {
+		OBJ_341 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "ProgressSpinnerKit::ProgressSpinnerKit" /* ProgressSpinnerKit */;
+			targetProxy = E7C8BAFD213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_342 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::Utility" /* Utility */;
+			targetProxy = E7C8BB0D213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::Basic" /* Basic */;
+			targetProxy = E7C8BB0E213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::POSIX" /* POSIX */;
+			targetProxy = E7C8BB0F213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_345 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::SPMLibc" /* SPMLibc */;
+			targetProxy = E7C8BB10213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_346 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::clibc" /* clibc */;
+			targetProxy = E7C8BB11213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_347 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "ReactiveTask::ReactiveTask" /* ReactiveTask */;
-			targetProxy = E706DA6720CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB12213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_156 /* PBXTargetDependency */ = {
+		OBJ_348 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "ReactiveSwift::ReactiveSwift" /* ReactiveSwift */;
-			targetProxy = E706DA6820CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB16213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_157 /* PBXTargetDependency */ = {
+		OBJ_349 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Result::Result" /* Result */;
-			targetProxy = E706DA6920CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB17213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_168 /* PBXTargetDependency */ = {
+		OBJ_360 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Donut::DonutTests" /* DonutTests */;
-			targetProxy = E706DA7820CD0EF900504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB32213C312C00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_182 /* PBXTargetDependency */ = {
+		OBJ_380 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Donut::Donut" /* Donut */;
-			targetProxy = E706DA7120CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB25213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_183 /* PBXTargetDependency */ = {
+		OBJ_381 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Curry::Curry" /* Curry */;
-			targetProxy = E706DA7220CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB26213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_184 /* PBXTargetDependency */ = {
+		OBJ_382 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Commandant::Commandant" /* Commandant */;
-			targetProxy = E706DA7320CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB27213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_185 /* PBXTargetDependency */ = {
+		OBJ_383 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Donut::DonutKit" /* DonutKit */;
-			targetProxy = E706DA7420CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB28213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_186 /* PBXTargetDependency */ = {
+		OBJ_384 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "ProgressSpinnerKit::ProgressSpinnerKit" /* ProgressSpinnerKit */;
+			targetProxy = E7C8BB29213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_385 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::Utility" /* Utility */;
+			targetProxy = E7C8BB2A213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::Basic" /* Basic */;
+			targetProxy = E7C8BB2B213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_387 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::POSIX" /* POSIX */;
+			targetProxy = E7C8BB2C213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::SPMLibc" /* SPMLibc */;
+			targetProxy = E7C8BB2D213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::clibc" /* clibc */;
+			targetProxy = E7C8BB2E213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_390 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "ReactiveTask::ReactiveTask" /* ReactiveTask */;
-			targetProxy = E706DA7520CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB2F213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_187 /* PBXTargetDependency */ = {
+		OBJ_391 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "ReactiveSwift::ReactiveSwift" /* ReactiveSwift */;
-			targetProxy = E706DA7620CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB30213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_188 /* PBXTargetDependency */ = {
+		OBJ_392 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Result::Result" /* Result */;
-			targetProxy = E706DA7720CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB31213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_216 /* PBXTargetDependency */ = {
+		OBJ_411 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::SPMLibc" /* SPMLibc */;
+			targetProxy = E7C8BB01213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_412 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::clibc" /* clibc */;
+			targetProxy = E7C8BB03213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_425 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::Utility" /* Utility */;
+			targetProxy = E7C8BAFE213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_426 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::Basic" /* Basic */;
+			targetProxy = E7C8BB09213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_427 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::POSIX" /* POSIX */;
+			targetProxy = E7C8BB0A213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_428 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::SPMLibc" /* SPMLibc */;
+			targetProxy = E7C8BB0B213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_429 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::clibc" /* clibc */;
+			targetProxy = E7C8BB0C213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_463 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Result::Result" /* Result */;
-			targetProxy = E706DA6420CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB14213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_233 /* PBXTargetDependency */ = {
+		OBJ_480 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "ReactiveSwift::ReactiveSwift" /* ReactiveSwift */;
-			targetProxy = E706DA6520CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB13213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_234 /* PBXTargetDependency */ = {
+		OBJ_481 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Result::Result" /* Result */;
-			targetProxy = E706DA6620CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB15213C312A00D4A91D /* PBXContainerItemProxy */;
 		};
-		OBJ_258 /* PBXTargetDependency */ = {
+		OBJ_510 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::clibc" /* clibc */;
+			targetProxy = E7C8BB02213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_545 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::Basic" /* Basic */;
+			targetProxy = E7C8BAFF213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_546 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::POSIX" /* POSIX */;
+			targetProxy = E7C8BB06213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::SPMLibc" /* SPMLibc */;
+			targetProxy = E7C8BB07213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_548 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftPM::clibc" /* clibc */;
+			targetProxy = E7C8BB08213C312A00D4A91D /* PBXContainerItemProxy */;
+		};
+		OBJ_559 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Donut::Donut" /* Donut */;
-			targetProxy = E706DA7920CD0EF900504C67 /* PBXContainerItemProxy */;
-		};
-		OBJ_96 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Result::Result" /* Result */;
-			targetProxy = E706DA6A20CD0EF600504C67 /* PBXContainerItemProxy */;
+			targetProxy = E7C8BB33213C312C00D4A91D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_100 /* Debug */ = {
+		OBJ_195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
+				INFOPLIST_FILE = Donut.xcodeproj/Basic_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Basic;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Basic;
+			};
+			name = Debug;
+		};
+		OBJ_196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
+				INFOPLIST_FILE = Donut.xcodeproj/Basic_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Basic;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Basic;
+			};
+			name = Release;
+		};
+		OBJ_247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Donut.xcodeproj/Commandant_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Commandant;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Commandant;
+			};
+			name = Debug;
+		};
+		OBJ_248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Donut.xcodeproj/Commandant_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Commandant;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Commandant;
+			};
+			name = Release;
+		};
+		OBJ_265 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1144,7 +2527,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_101 /* Release */ = {
+		OBJ_266 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1153,7 +2536,7 @@
 			};
 			name = Release;
 		};
-		OBJ_106 /* Debug */ = {
+		OBJ_271 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1176,7 +2559,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_107 /* Release */ = {
+		OBJ_272 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1199,7 +2582,7 @@
 			};
 			name = Release;
 		};
-		OBJ_113 /* Debug */ = {
+		OBJ_278 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1208,7 +2591,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_114 /* Release */ = {
+		OBJ_279 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1217,19 +2600,22 @@
 			};
 			name = Release;
 		};
-		OBJ_119 /* Debug */ = {
+		OBJ_284 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
 				INFOPLIST_FILE = Donut.xcodeproj/Donut_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
 				SWIFT_VERSION = 4.0;
@@ -1237,341 +2623,26 @@
 			};
 			name = Debug;
 		};
-		OBJ_120 /* Release */ = {
+		OBJ_285 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
 				INFOPLIST_FILE = Donut.xcodeproj/Donut_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
 				SWIFT_VERSION = 4.0;
 				TARGET_NAME = Donut;
-			};
-			name = Release;
-		};
-		OBJ_143 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Donut.xcodeproj/DonutKit_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = DonutKit;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = DonutKit;
-			};
-			name = Debug;
-		};
-		OBJ_144 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Donut.xcodeproj/DonutKit_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = DonutKit;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = DonutKit;
-			};
-			name = Release;
-		};
-		OBJ_160 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		OBJ_161 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		OBJ_166 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_167 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		OBJ_171 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Donut.xcodeproj/DonutTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = DonutTests;
-			};
-			name = Debug;
-		};
-		OBJ_172 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Donut.xcodeproj/DonutTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = DonutTests;
-			};
-			name = Release;
-		};
-		OBJ_190 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Donut.xcodeproj/ReactiveSwift_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = ReactiveSwift;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = ReactiveSwift;
-			};
-			name = Debug;
-		};
-		OBJ_191 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Donut.xcodeproj/ReactiveSwift_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = ReactiveSwift;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = ReactiveSwift;
-			};
-			name = Release;
-		};
-		OBJ_219 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		OBJ_220 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		OBJ_224 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Donut.xcodeproj/ReactiveTask_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = ReactiveTask;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = ReactiveTask;
-			};
-			name = Debug;
-		};
-		OBJ_225 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Donut.xcodeproj/ReactiveTask_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = ReactiveTask;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = ReactiveTask;
-			};
-			name = Release;
-		};
-		OBJ_237 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		OBJ_238 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		OBJ_242 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Donut.xcodeproj/Result_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Result;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = Result;
-			};
-			name = Debug;
-		};
-		OBJ_243 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Donut.xcodeproj/Result_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Result;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = Result;
-			};
-			name = Release;
-		};
-		OBJ_250 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_251 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		OBJ_256 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_257 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
 			};
 			name = Release;
 		};
@@ -1597,6 +2668,184 @@
 			};
 			name = Debug;
 		};
+		OBJ_323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
+				INFOPLIST_FILE = Donut.xcodeproj/DonutKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = DonutKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = DonutKit;
+			};
+			name = Debug;
+		};
+		OBJ_324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
+				INFOPLIST_FILE = Donut.xcodeproj/DonutKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = DonutKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = DonutKit;
+			};
+			name = Release;
+		};
+		OBJ_352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_359 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
+				INFOPLIST_FILE = Donut.xcodeproj/DonutTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = DonutTests;
+			};
+			name = Debug;
+		};
+		OBJ_364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
+				INFOPLIST_FILE = Donut.xcodeproj/DonutTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = DonutTests;
+			};
+			name = Release;
+		};
+		OBJ_394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
+				INFOPLIST_FILE = Donut.xcodeproj/POSIX_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = POSIX;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = POSIX;
+			};
+			name = Debug;
+		};
+		OBJ_395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
+				INFOPLIST_FILE = Donut.xcodeproj/POSIX_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = POSIX;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = POSIX;
+			};
+			name = Release;
+		};
 		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1617,7 +2866,7 @@
 			};
 			name = Release;
 		};
-		OBJ_82 /* Debug */ = {
+		OBJ_414 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1625,22 +2874,69 @@
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Donut.xcodeproj/Commandant_Info.plist;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
+				INFOPLIST_FILE = Donut.xcodeproj/ProgressSpinnerKit_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Commandant;
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = ProgressSpinnerKit;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Commandant;
+				TARGET_NAME = ProgressSpinnerKit;
 			};
 			name = Debug;
 		};
-		OBJ_83 /* Release */ = {
+		OBJ_415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
+				INFOPLIST_FILE = Donut.xcodeproj/ProgressSpinnerKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = ProgressSpinnerKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = ProgressSpinnerKit;
+			};
+			name = Release;
+		};
+		OBJ_432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_437 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1649,91 +2945,383 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Donut.xcodeproj/Commandant_Info.plist;
+				INFOPLIST_FILE = Donut.xcodeproj/ReactiveSwift_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Commandant;
+				PRODUCT_BUNDLE_IDENTIFIER = ReactiveSwift;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Commandant;
+				TARGET_NAME = ReactiveSwift;
+			};
+			name = Debug;
+		};
+		OBJ_438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Donut.xcodeproj/ReactiveSwift_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ReactiveSwift;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = ReactiveSwift;
+			};
+			name = Release;
+		};
+		OBJ_466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Donut.xcodeproj/ReactiveTask_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ReactiveTask;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = ReactiveTask;
+			};
+			name = Debug;
+		};
+		OBJ_472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Donut.xcodeproj/ReactiveTask_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ReactiveTask;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = ReactiveTask;
+			};
+			name = Release;
+		};
+		OBJ_484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Donut.xcodeproj/Result_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Result;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Result;
+			};
+			name = Debug;
+		};
+		OBJ_490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Donut.xcodeproj/Result_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Result;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Result;
+			};
+			name = Release;
+		};
+		OBJ_499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
+				INFOPLIST_FILE = Donut.xcodeproj/SPMLibc_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = SPMLibc;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SPMLibc;
+			};
+			name = Debug;
+		};
+		OBJ_505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
+				INFOPLIST_FILE = Donut.xcodeproj/SPMLibc_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = SPMLibc;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SPMLibc;
+			};
+			name = Release;
+		};
+		OBJ_513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_514 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
+				INFOPLIST_FILE = Donut.xcodeproj/Utility_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Utility;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Utility;
+			};
+			name = Debug;
+		};
+		OBJ_519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
+				INFOPLIST_FILE = Donut.xcodeproj/Utility_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Utility;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Utility;
+			};
+			name = Release;
+		};
+		OBJ_550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
+				INFOPLIST_FILE = Donut.xcodeproj/clibc_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = clibc;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = clibc;
+			};
+			name = Debug;
+		};
+		OBJ_551 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-package-manager.git-5579847846518334428/Sources/clibc/include",
+				);
+				INFOPLIST_FILE = Donut.xcodeproj/clibc_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = clibc;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = clibc;
+			};
+			name = Release;
+		};
+		OBJ_557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_105 /* Build configuration list for PBXNativeTarget "Curry" */ = {
+		OBJ_194 /* Build configuration list for PBXNativeTarget "Basic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_106 /* Debug */,
-				OBJ_107 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_112 /* Build configuration list for PBXNativeTarget "CurryPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_113 /* Debug */,
-				OBJ_114 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_118 /* Build configuration list for PBXNativeTarget "Donut" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_119 /* Debug */,
-				OBJ_120 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_142 /* Build configuration list for PBXNativeTarget "DonutKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_143 /* Debug */,
-				OBJ_144 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_159 /* Build configuration list for PBXNativeTarget "DonutPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_160 /* Debug */,
-				OBJ_161 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_165 /* Build configuration list for PBXAggregateTarget "DonutPackageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_166 /* Debug */,
-				OBJ_167 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_170 /* Build configuration list for PBXNativeTarget "DonutTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_171 /* Debug */,
-				OBJ_172 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_189 /* Build configuration list for PBXNativeTarget "ReactiveSwift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_190 /* Debug */,
-				OBJ_191 /* Release */,
+				OBJ_195 /* Debug */,
+				OBJ_196 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1747,74 +3335,209 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_218 /* Build configuration list for PBXNativeTarget "ReactiveSwiftPackageDescription" */ = {
+		OBJ_246 /* Build configuration list for PBXNativeTarget "Commandant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_219 /* Debug */,
-				OBJ_220 /* Release */,
+				OBJ_247 /* Debug */,
+				OBJ_248 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_223 /* Build configuration list for PBXNativeTarget "ReactiveTask" */ = {
+		OBJ_264 /* Build configuration list for PBXNativeTarget "CommandantPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_224 /* Debug */,
-				OBJ_225 /* Release */,
+				OBJ_265 /* Debug */,
+				OBJ_266 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_236 /* Build configuration list for PBXNativeTarget "ReactiveTaskPackageDescription" */ = {
+		OBJ_270 /* Build configuration list for PBXNativeTarget "Curry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_237 /* Debug */,
-				OBJ_238 /* Release */,
+				OBJ_271 /* Debug */,
+				OBJ_272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_241 /* Build configuration list for PBXNativeTarget "Result" */ = {
+		OBJ_277 /* Build configuration list for PBXNativeTarget "CurryPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_242 /* Debug */,
-				OBJ_243 /* Release */,
+				OBJ_278 /* Debug */,
+				OBJ_279 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_249 /* Build configuration list for PBXNativeTarget "ResultPackageDescription" */ = {
+		OBJ_283 /* Build configuration list for PBXNativeTarget "Donut" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_250 /* Debug */,
-				OBJ_251 /* Release */,
+				OBJ_284 /* Debug */,
+				OBJ_285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_255 /* Build configuration list for PBXAggregateTarget "donut" */ = {
+		OBJ_322 /* Build configuration list for PBXNativeTarget "DonutKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_256 /* Debug */,
-				OBJ_257 /* Release */,
+				OBJ_323 /* Debug */,
+				OBJ_324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_81 /* Build configuration list for PBXNativeTarget "Commandant" */ = {
+		OBJ_351 /* Build configuration list for PBXNativeTarget "DonutPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_82 /* Debug */,
-				OBJ_83 /* Release */,
+				OBJ_352 /* Debug */,
+				OBJ_353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_99 /* Build configuration list for PBXNativeTarget "CommandantPackageDescription" */ = {
+		OBJ_357 /* Build configuration list for PBXAggregateTarget "DonutPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_100 /* Debug */,
-				OBJ_101 /* Release */,
+				OBJ_358 /* Debug */,
+				OBJ_359 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_362 /* Build configuration list for PBXNativeTarget "DonutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_363 /* Debug */,
+				OBJ_364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_393 /* Build configuration list for PBXNativeTarget "POSIX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_394 /* Debug */,
+				OBJ_395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_413 /* Build configuration list for PBXNativeTarget "ProgressSpinnerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_414 /* Debug */,
+				OBJ_415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_431 /* Build configuration list for PBXNativeTarget "ProgressSpinnerKitPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_432 /* Debug */,
+				OBJ_433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_436 /* Build configuration list for PBXNativeTarget "ReactiveSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_437 /* Debug */,
+				OBJ_438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_465 /* Build configuration list for PBXNativeTarget "ReactiveSwiftPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_466 /* Debug */,
+				OBJ_467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_470 /* Build configuration list for PBXNativeTarget "ReactiveTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_471 /* Debug */,
+				OBJ_472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_483 /* Build configuration list for PBXNativeTarget "ReactiveTaskPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_484 /* Debug */,
+				OBJ_485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_488 /* Build configuration list for PBXNativeTarget "Result" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_489 /* Debug */,
+				OBJ_490 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_498 /* Build configuration list for PBXNativeTarget "ResultPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_499 /* Debug */,
+				OBJ_500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_503 /* Build configuration list for PBXNativeTarget "SPMLibc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_504 /* Debug */,
+				OBJ_505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_512 /* Build configuration list for PBXNativeTarget "SwiftPMPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_513 /* Debug */,
+				OBJ_514 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_517 /* Build configuration list for PBXNativeTarget "Utility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_518 /* Debug */,
+				OBJ_519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_549 /* Build configuration list for PBXNativeTarget "clibc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_550 /* Debug */,
+				OBJ_551 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_556 /* Build configuration list for PBXAggregateTarget "donut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_557 /* Debug */,
+				OBJ_558 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

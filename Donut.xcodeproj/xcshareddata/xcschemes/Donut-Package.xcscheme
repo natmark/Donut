@@ -14,6 +14,34 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Donut::DonutKit"
+               BuildableName = "DonutKit.framework"
+               BlueprintName = "DonutKit"
+               ReferencedContainer = "container:Donut.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "SwiftPM::Basic"
+               BuildableName = "Basic.framework"
+               BlueprintName = "Basic"
+               ReferencedContainer = "container:Donut.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "ReactiveSwift::ReactiveSwift"
                BuildableName = "ReactiveSwift.framework"
                BlueprintName = "ReactiveSwift"
@@ -42,9 +70,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Donut::DonutKit"
-               BuildableName = "DonutKit.framework"
-               BlueprintName = "DonutKit"
+               BlueprintIdentifier = "Donut::Donut"
+               BuildableName = "Donut"
+               BlueprintName = "Donut"
                ReferencedContainer = "container:Donut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -98,9 +126,65 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Donut::Donut"
-               BuildableName = "Donut"
-               BlueprintName = "Donut"
+               BlueprintIdentifier = "SwiftPM::POSIX"
+               BuildableName = "POSIX.framework"
+               BlueprintName = "POSIX"
+               ReferencedContainer = "container:Donut.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ProgressSpinnerKit::ProgressSpinnerKit"
+               BuildableName = "ProgressSpinnerKit.framework"
+               BlueprintName = "ProgressSpinnerKit"
+               ReferencedContainer = "container:Donut.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "SwiftPM::SPMLibc"
+               BuildableName = "SPMLibc.framework"
+               BlueprintName = "SPMLibc"
+               ReferencedContainer = "container:Donut.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "SwiftPM::Utility"
+               BuildableName = "Utility.framework"
+               BlueprintName = "Utility"
+               ReferencedContainer = "container:Donut.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "SwiftPM::clibc"
+               BuildableName = "clibc.framework"
+               BlueprintName = "clibc"
                ReferencedContainer = "container:Donut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -139,9 +223,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ReactiveSwift::ReactiveSwift"
-            BuildableName = "ReactiveSwift.framework"
-            BlueprintName = "ReactiveSwift"
+            BlueprintIdentifier = "Donut::DonutKit"
+            BuildableName = "DonutKit.framework"
+            BlueprintName = "DonutKit"
             ReferencedContainer = "container:Donut.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

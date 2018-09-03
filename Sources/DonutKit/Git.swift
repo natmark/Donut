@@ -10,6 +10,8 @@ import Foundation
 import ReactiveTask
 import ReactiveSwift
 import Result
+import Basic
+import ProgressSpinnerKit
 
 public struct Commit {
     public let id: String
@@ -22,6 +24,7 @@ public struct Commit {
 
 public struct Git {
     public static let donutRequiredGitVersion = "2.3.0"
+    public static let spinner = createProgressSpinner(forStream: Basic.stdoutStream, header: "processing...", isShowStopped: false, spinner: Spinner(kind: .box1))
 
     public static func installTemplateFrom(url: URL, version: String) -> SignalProducer<Void, DonutError> {
         let dirPath = URL(fileURLWithPath: TemplateDirectory.basePath.path + "/\(url.host!)\(url.path)")
@@ -52,9 +55,10 @@ public struct Git {
             }
             .map { _ in
                 Swift.print("🍩", "Searching .xctemplate from remote repository") //MEMO: Log for faking the wait time of the fetch :D
+                spinner.start()
             }
             .attemptMap { _ in
-                launchGitTask(["fetch", "origin", commit.id], repositoryFileURL: dirPath, standardInput: nil, environment: nil)
+                launchGitTask(["fetch", "origin", commit.id, "--depth=1"], repositoryFileURL: dirPath, standardInput: nil, environment: nil)
                     .first()!
             }
             .attemptMap { _ in
@@ -77,6 +81,7 @@ public struct Git {
                     .first()!
             }
             .map { files -> [String] in
+                spinner.stop()
                 for file in files {
                     Swift.print("🍩", "Found \(file)")
                 }
