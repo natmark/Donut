@@ -12,7 +12,7 @@ import DonutKit
 
 public struct DonutVersion {
     public let value: SemanticVersion
-    public static let current = DonutVersion(value: SemanticVersion(major: 0, minor: 1, patch: 0))
+    public static let current = DonutVersion(value: SemanticVersion(major: 0, minor: 1, patch: 1))
 }
 
 public struct VersionCommand: CommandProtocol {
