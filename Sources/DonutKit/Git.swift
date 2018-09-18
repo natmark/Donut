@@ -67,11 +67,10 @@ public struct Git {
                         let files = Array(Set(input.components(separatedBy: "\n").dropLast()
                             .filter { $0.contains(".xctemplate") }
                             .map {
-                                $0.components(separatedBy: "/")
-                                    .filter { $0.contains(".xctemplate") }.first
+                                String($0.prefix($0.range(of: ".xctemplate")?.upperBound.encodedOffset ?? 0))
                             }
-                            .filter { $0 != nil }
-                            .map { $0! }))
+                            .filter { $0.count != 0 }
+                        ))
 
                         if files.count == 0 {
                             return SignalProducer(error: DonutError.templateFileNotFoundError)
